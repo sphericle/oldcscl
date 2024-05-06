@@ -1,27 +1,42 @@
 [
     {
         "role": "owner",
-        "name": "List Owner",
+        "name": "Huntzz",
+        "link": "https://www.youtube.com/@Prometheus_Alt"
+    },
+    {
+        "role": "owner",
+        "name": "sphericle",
         "link": "https://www.youtube.com/@Prometheus_Alt"
     },
     {
         "role": "admin",
-        "name": "List Admin",
+        "name": "Zealous",
         "link": "https://www.youtube.com/@Prometheus_Alt"
     },
     {
-        "role": "helper",
-        "name": "List Helper",
+        "role": "admin",
+        "name": "Boink",
         "link": "https://www.youtube.com/@Prometheus_Alt"
     },
     {
-        "role": "trial",
-        "name": "Trial List Helper",
+        "role": "admin",
+        "name": "Vanious",
+        "link": "https://www.youtube.com/@Prometheus_Alt"
+    },
+    {
+        "role": "admin",
+        "name": "limitation",
+        "link": "https://www.youtube.com/@Prometheus_Alt"
+    },
+    {
+        "role": "admin",
+        "name": "TacoJed",
         "link": "https://www.youtube.com/@Prometheus_Alt"
     },
     {
         "role": "dev",
-        "name": "List Coder",
+        "name": "PokeyYapper1991",
         "link": "https://www.youtube.com/@Prometheus_Alt"
     }
 ]
