@@ -8,5 +8,11 @@
     "percentToQualify": 100,
     "song-title": "Epilogue",
     "records": [
+                {
+            "user": "doggo",
+            "link": "https://www.youtube.com/watch?v=wS8dzvhpU4I&ab_channel=Doggo136",
+            "percent": 100,
+            "hz": 240
+        }
     ]
 }
