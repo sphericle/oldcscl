@@ -36,9 +36,10 @@
     </head>
     <body id="app">
         <header :class="{ dark: store.dark }">
-            <div class="logo">
-                <h2>CSCL</h2>
-                <p>v1.0.0</p>
+            <div class="logo" style="display: flex; align-items: center;">
+                <img src="list_icon.png" style="width: 50px; height: 50px;"
+                    align="left">
+                <h2 style="text-align: center; white-space: nowrap;">CSCL</h2>
             </div>
             <nav class="nav">
                 <router-link class="nav__tab" to="/">
