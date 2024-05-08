@@ -133,7 +133,7 @@ export default {
 
                         
                     </p>
-                    <p>Join the <a href="https://discord.gg/W7Eqqj8NG2">Discord</a> to submit a record!</p>
+                    <p>Join the <u><a href="https://discord.gg/W7Eqqj8NG2">Discord</a></u> to submit a record!</p>
                 </div>
             </div>
         </main>
