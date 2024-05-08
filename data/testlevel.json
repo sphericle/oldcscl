@@ -1,0 +1,20 @@
+{
+    "id": 57436521,
+    "name": "test",
+    "author": "crazen",
+    "creators": ["guitarherostyles"],
+    "verifier": "zoinks",
+    "verification": "https://youtu.be/ineHGnSAhKA?si=93KZUPArfWN-3UJL",
+    "percentToQualify": 0,
+    "password": "Not Copyable",
+    "song-title": "Shiawase - Dion Timmer",
+    "song-link": "https://www.youtube.com/watch?v=oS-DaUtHVhI",
+    "records": [
+        {
+            "user": "",
+            "link": "https://youtu.be/_yBG5WA1LaA",
+            "percent": 100,
+            "hz": 480
+        }
+    ]
+}
