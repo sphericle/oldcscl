@@ -88,9 +88,6 @@ export default {
                             </tr>
                         </table>
                     </div>
-                    <div class="type-label-sm">
-                        <p>Join the <a href="https://discord.gg/W7Eqqj8NG2">Discord</a> to submit a record!</p>
-                   </div>
                 </div>
             </div>
         </main>
