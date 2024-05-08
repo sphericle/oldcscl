@@ -128,10 +128,13 @@ export default {
                     <p>
                         Once a level falls onto the Legacy List, we accept records for it for 24 hours after it falls off, then afterwards we never accept records for said level
                     </p>
-                </div>
-                <div class="type-label-sm">
+                    <p>
+
+
+                        
+                    </p>
                     <p>Join the <a href="https://discord.gg/W7Eqqj8NG2">Discord</a> to submit a record!</p>
-               </div>
+                </div>
             </div>
         </main>
     `,
