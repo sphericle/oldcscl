@@ -1,1 +1,1 @@
-https://media.discordapp.net/attachments/1213623031713243218/1236216120114155560/image0.jpg?ex=6637dc3a&is=66368aba&hm=32fffcc5b51fa2fd37d19ba5c99dae3a2711ededc191c7a6fbd45532bbb2a7df&
+https://youtu.be/_yBG5WA1LaA?si=mUB8LERsAkyfGmoY
