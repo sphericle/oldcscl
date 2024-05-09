@@ -8,6 +8,11 @@
     "password": "Free to copy",
     "song-title": "LordAndiso - cats on pogo sticks",
     "records": [
-        
+        {
+            "user": "skiptracingclub",
+            "link": "https://youtu.be/pG0AosSCDnI",
+            "percent": 100,
+            "hz": 240
+        }
     ]
 }
