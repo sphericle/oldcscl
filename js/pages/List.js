@@ -134,7 +134,7 @@ export default {
 
                         
                     </p>
-                    <p>Join the <u><a href="https://discord.gg/W7Eqqj8NG2">Discord</a></u> to submit a record!</p>
+                    <p>Join the <u><a href="https://discord.gg/W7Eqqj8NG2">Discord</a></u> to submit a record or challenge!</p>
                 </div>
             </div>
         </main>
