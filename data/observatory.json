@@ -10,6 +10,11 @@
     "song-title": "Super Mario Galaxy - Rosalina in the Observatory 3",
     "song-link": "https://drive.google.com/file/d/1mpiSwG2JgEIeg5G1QL54XAkXCOgxLlAi/view?usp=drivesdk",
     "records": [
-        
+        {
+            "user": "skiptracingclub",
+            "link": "https://youtu.be/pG0AosSCDnI",
+            "percent": 100,
+            "hz": 240
+        }
     ]
 }
