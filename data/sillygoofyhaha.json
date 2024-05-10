@@ -8,17 +8,6 @@
     "percentToQualify": 100,
     "song-title": "LordAndiso - cats on pogo sticks",
     "records": [
-        {
-            "user": "skiptracingclub",
-            "link": "https://youtu.be/pG0AosSCDnI",
-            "percent": 100,
-            "hz": 240
-        },
-        {
-            "user": "Zealous",
-            "link": "https://youtu.be/vOlOb2QLG38",
-            "percent": 100,
-            "hz": 600
-        }
+        
     ]
 }
