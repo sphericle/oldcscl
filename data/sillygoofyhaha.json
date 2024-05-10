@@ -8,6 +8,12 @@
     "percentToQualify": 100,
     "song-title": "LordAndiso - cats on pogo sticks",
     "records": [
-        
+        {
+            "user": "sphericle",
+            "link": "https://youtu.be/OHmsQkXs7PU",
+            "percent": 100,
+            "hz": 240,
+            "___note": "mods add the old records from before the update ABOVE mine ok thanks"
+        }
     ]
 }
