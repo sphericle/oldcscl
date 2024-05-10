@@ -124,13 +124,19 @@ export default {
                         Do not use secret routes or bug routes
                     </p>
                     <p>
-                        Once a level falls onto the Legacy List, we accept records for it for 24 hours after it falls off, then afterwards we never accept records for said level
+                        Once a level falls onto the Legacy List, we accept records for it for 24 hours after it falls off, then afterwards we never accept records for said level.
+                    </p>
+
+
+
+
+
+                    <p> 
 
 
 
 
                     </p>
-                    
                     <p>Join the <u><a href="https://discord.gg/W7Eqqj8NG2">Discord</a></u> to submit a record or challenge!</p>
                 </div>
             </div>
