@@ -106,7 +106,10 @@ export default {
                     </template>
                     <h3>Submission Requirements</h3>
                     <p>
-                        Achieved the record without using hacks (however, Click Between Frames is allowed)
+                        Achieved the record without using hacks (however, Click Between Frames is allowed.)
+                    </p>
+                    <p>
+                        FPS Bypass is allowed up to 360hz. Physics Bypass is banned.)
                     </p>
                     <p>
                         Achieved the record on the level that is listed on the site - please check the level ID before you submit a record
