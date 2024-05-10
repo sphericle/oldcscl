@@ -8,5 +8,11 @@
     "percentToQualify": 100,
     "song-title": "SoundHolicKDeath - Death Moon",
     "records": [
+        {
+            "user": "sphericle",
+            "link": "https://youtu.be/dyr7_SMIYGU",
+            "percent": 100,
+            "hz": 240
+        }
     ]
 }
