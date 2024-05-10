@@ -43,7 +43,12 @@
             "link": "https://youtu.be/kqf8zVFZ9go",
             "percent": 100,
             "hz": 240
+        },
+        {
+            "user": "TacoJed",
+            "link": "https://www.youtube.com/watch?v=NhZ9Cj3V_xQ",
+            "percent": 100,
+            "hz": 240
         }
-        
     ]
 }
