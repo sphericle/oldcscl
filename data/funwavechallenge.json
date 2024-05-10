@@ -8,5 +8,11 @@
     "percentToQualify": 100,
     "song-title": "Creo - Flow",
     "records": [
+            {
+            "user": "TacoJed",
+            "link": "https://www.youtube.com/watch?v=8Zt7h47KdcA",
+            "percent": 100,
+            "hz": 240
+        }
     ]
 }
