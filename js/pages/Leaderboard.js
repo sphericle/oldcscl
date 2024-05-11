@@ -32,7 +32,7 @@ export default {
                                 <p class="type-label-lg">#{{ i + 1 }}</p>
                             </td>
                             <td class="total">
-                                <p class="type-label-lg">{{ addCommasToNumbers(ientry.total.toFixed(0).toLocaleString()) }}</p>
+                                <p class="type-label-lg">{{ addCommasToNumber(ientry.total.toFixed(0).toLocaleString()) }}</p>
                             </td>
                             <td class="user" :class="{ 'active': selected == i }">
                                 <button @click="selected = i">
@@ -56,7 +56,7 @@ export default {
                                     <a class="type-label-lg" target="_blank" :href="score.link">{{ score.level }}</a>
                                 </td>
                                 <td class="score">
-                                    <p>+{{ addCommasToNumbers(score.score.toFixed(0).toLocaleString()) }}</p>
+                                    <p>+{{ addCommasToNumber(score.score.toFixed(0).toLocaleString()) }}</p>
                                 </td>
                             </tr>
                         </table>
@@ -70,7 +70,7 @@ export default {
                                     <a class="type-label-lg" target="_blank" :href="score.link">{{ score.level }}</a>
                                 </td>
                                 <td class="score">
-                                    <p>+{{ addCommasToNumbers(score.score.toFixed(0).toLocaleString()) }}</p>
+                                    <p>+{{ addCommasToNumber(score.score.toFixed(0).toLocaleString()) }}</p>
                                 </td>
                             </tr>
                         </table>
@@ -84,7 +84,7 @@ export default {
                                     <a class="type-label-lg" target="_blank" :href="score.link">{{ score.percent }}% {{ score.level }}</a>
                                 </td>
                                 <td class="score">
-                                    <p>+{{ addCommasToNumbers(score.score.toFixed(0).toLocaleString()) }}</p>
+                                    <p>+{{ addCommasToNumber(score.score.toFixed(0).toLocaleString()) }}</p>
                                 </td>
                             </tr>
                         </table>
