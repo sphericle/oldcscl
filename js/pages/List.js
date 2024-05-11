@@ -109,7 +109,10 @@ export default {
                         Achieved the record without using hacks (however, Click Between Frames is allowed.)
                     </p>
                     <p>
-                        FPS Bypass is allowed up to 360hz. Physics Bypass is banned.)
+                        FPS Bypass is allowed up to 360hz. Physics Bypass is banned.
+                    </p>
+                    <p>
+                    If you do not have any mods installed (including MegaHack), please enable the Show Info Label setting.
                     </p>
                     <p>
                         Achieved the record on the level that is listed on the site - please check the level ID before you submit a record
@@ -132,6 +135,7 @@ export default {
                     <p>
                      You must have Cheat Indicator enabled in your completion, including the Show on Endscreen setting. Unmodded versions of GD are exempt from this.
                     </p>
+                    
 
 
 
