@@ -8,5 +8,11 @@
     "percentToQualify": 100,
     "song-title": "",
     "records": [
+            {
+            "user": "limitationn",
+            "link": "https://youtu.be/Bv3jPLoUT9Q?si=t_2Xv-Dbp_GZcs99",
+            "percent": 100,
+            "hz": 240
+        }
     ]
 }
