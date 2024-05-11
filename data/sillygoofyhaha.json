@@ -38,6 +38,13 @@
             "link": "https://youtu.be/cm04MWa-nuI?si=gjR-CjEMGzwSg60O",
             "percent": 100,
             "hz": 360
+        },
+        {
+            "user": "Empanada",
+            "link": "https://youtu.be/4LbiO4Pmtkc?si=e_pO6ddueXpeTUkE",
+            "percent": 100,
+            "hz": 60,
+            "mobile": "true"
         }
     ]
 }
