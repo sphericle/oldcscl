@@ -1,16 +1,4 @@
 /**
- * Utility function to add commas to a number for better readability
- * @param {number} number The number to format
- * @returns {string} The formatted number with commas
- */
-export function addCommasToNumber(number) {
-    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-}
-
-// Other code related to scoring functions...
-
-
-/**
  * Numbers of decimal digits to round to
  */
 const scale = 0;
