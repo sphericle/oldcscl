@@ -13,6 +13,12 @@
             "link": "https://www.youtube.com/watch?v=8Zt7h47KdcA",
             "percent": 100,
             "hz": 240
+        },
+            {
+            "user": "limitationn",
+            "link": "https://youtu.be/seRFLLrdokk",
+            "percent": 100,
+            "hz": 2000
         }
     ]
 }
