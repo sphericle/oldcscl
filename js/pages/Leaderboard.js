@@ -1,6 +1,6 @@
 import { fetchLeaderboard } from '../content.js';
 import { localize } from '../util.js';
-import { addCommasToNumbers } from '../score.js';
+import { addCommasToNumber } from '../score.js';
 
 import Spinner from '../components/Spinner.js';
 
