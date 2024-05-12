@@ -65,7 +65,7 @@ export default {
                     </ul>
                     <h2>Records</h2>
                     <p v-if="selected + 1 > 150">This level does not accept new records.</p>
-                    <p v-if="record in level.records">victors count wip</p>
+                    <p v-if="record">victors count wip</p>
                     <table class="records">
                         <tr v-for="record in level.records" class="record">
                             <td class="percent">
