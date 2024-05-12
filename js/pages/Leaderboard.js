@@ -1,5 +1,6 @@
 import { fetchList, fetchLeaderboard } from '../content.js';
 import { localize } from '../util.js';
+import { score } from "../score.js";
 
 import Spinner from '../components/Spinner.js';
 
