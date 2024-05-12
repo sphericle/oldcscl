@@ -113,7 +113,10 @@ export default {
                         FPS Bypass is allowed up to 360hz. Physics Bypass is banned.
                     </p>
                     <p>
-                    If you do not have any mods installed (including MegaHack), please enable the Show Info Label setting.
+                        You must have Cheat Indicator enabled in your completion, including the Show on Endscreen setting. Unmodded versions of GD are exempt from this.
+                    </p>
+                    <p>
+                        If you do not have any mods installed (including MegaHack), please enable the Show Info Label setting.
                     </p>
                     <p>
                         Achieved the record on the level that is listed on the site - please check the level ID before you submit a record
@@ -125,16 +128,10 @@ export default {
                         The recording must have a previous attempt and entire death animation shown before the completion, unless the completion is on the first attempt.
                     </p>
                     <p>
-                        The recording must also show the cheat indicator on the endscreen, or the completion will be invalidated.
-                    </p>
-                    <p>
                         Do not use secret routes or bug routes
                     </p>
                     <p>
                         Once a level falls onto the Legacy List, we accept records for it for 24 hours after it falls off, then afterwards we never accept records for said level.
-                    </p>
-                    <p>
-                     You must have Cheat Indicator enabled in your completion, including the Show on Endscreen setting. Unmodded versions of GD are exempt from this.
                     </p>
                     
 
