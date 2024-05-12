@@ -1,0 +1,54 @@
+{
+    "id": 105011741,
+    "name": "Prologue",
+    "author": "Zealous",
+    "creators": ["Zealous"],
+    "verifier": "Zealous",
+    "verification": "https://youtu.be/Ig34zH_hWeU",
+    "percentToQualify": 100,
+    "song-title": "Creo - Epilogue",
+    "records": [
+        {
+            "user": "doggo",
+            "link": "https://www.youtube.com/watch?v=wS8dzvhpU4I&ab_channel=Doggo136",
+            "percent": 100,
+            "hz": 240
+        },
+        {
+            "user": "limitationn",
+            "link": "https://youtu.be/sE3_nb5SXK4?si=XfPMPwGBLvJDa5au",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "The16FigureLimit",
+            "link": "https://youtu.be/s4OcHDq8ZrI",
+            "percent": 100,
+            "hz": 240
+        },
+        {
+            "user": "skiptracingclub",
+            "link": "https://youtu.be/8m6zHdIwHUM",
+            "percent": 100,
+            "hz": 240
+        },
+        {
+            "user": "NotDragon",
+            "link": "https://www.youtube.com/watch?v=gwM1a-p09MQ",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "sphericle",
+            "link": "https://youtu.be/kqf8zVFZ9go",
+            "percent": 100,
+            "hz": 240
+        },
+        {
+            "user": "TacoJed",
+            "link": "https://www.youtube.com/watch?v=NhZ9Cj3V_xQ",
+            "percent": 100,
+            "hz": 240
+        }
+    ]
+}
