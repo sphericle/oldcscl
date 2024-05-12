@@ -71,9 +71,6 @@ export default {
                                 <td class="score">
                                     <p>+{{ localize(score.score.toFixed(0).toLocaleString()) }}</p>
                                 </td>
-                                <td class="score">
-                                    <p v-if="record['rating']">{{ record.rating }}/10</p>
-                                </td>
                                 
                             </tr>
                         </table>
