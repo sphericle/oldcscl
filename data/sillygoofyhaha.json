@@ -46,16 +46,16 @@
             "mobile": "true"
         },
         {
-            "user": "NotDragon",
-            "link": "https://www.youtube.com/watch?v=ot_zi1Zp_p8",
-            "percent": 100,
-            "hz": 330
-        },
-        {
             "user": "Cowdoom11",
             "link": "https://youtu.be/NSVqtRMp-EU?si=gStjbZK4DbUCfaUt",
             "percent": 100,
             "hz": 360
+        },
+        {
+            "user": "NotDragon",
+            "link": "https://www.youtube.com/watch?v=ot_zi1Zp_p8",
+            "percent": 100,
+            "hz": 330
         }
     ]
 }
