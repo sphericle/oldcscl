@@ -71,6 +71,10 @@ export default {
                                 <td class="score">
                                     <p>+{{ localize(score.score.toFixed(0).toLocaleString()) }}</p>
                                 </td>
+                                <td class="score">
+                                    <p v-if="record['rating']">{{ record.rating }}/10</p>
+                                </td>
+                                
                             </tr>
                         </table>
                         <h2 v-if="entry.progressed.length > 0">Progressed ({{entry.progressed.length}})</h2>
