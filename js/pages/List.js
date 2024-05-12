@@ -68,7 +68,7 @@ export default {
                     <table class="records">
                         <tr v-for="record in level.records" class="record">
                             <td class="percent">
-                                <p if="record.rating">{{ record.rating || '?'}}/10</p>
+                                <p v-if="record['rating']">{{ record.rating }}/10</p>
                             </td>
                             <td class="user">
                                 <a :href="record.link" target="_blank" class="type-label-lg">{{ record.user }}</a>
