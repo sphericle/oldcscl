@@ -19,6 +19,14 @@
             "link": "https://www.youtube.com/watch?v=p6F11HrghCE&ab_channel=zel",
             "percent": 100,
             "hz": 240
+            },
+            {
+                "user": "TacoJed",
+                "link": "https://www.youtube.com/watch?v=MqBtjlRXN8g",
+                "percent": 100,
+                "rating": 0,
+                "MESSAGE!": "why did u give this a 0 tacojed whats so bad about it)",
+                "hz": 240
             }
     ]
 }
