@@ -82,6 +82,9 @@ export default {
                         </tr>
                     </table>
                 </div>
+                <div v-else-if="level.id==0" class="level" style="height: 100%; justify-content: center; align-items: center;">
+                <h1>Clicksync Challenge List</h1>
+                </div>
                 <div v-else class="level" style="height: 100%; justify-content: center; align-items: center;">
                     <p>(ノಠ益ಠ)ノ彡┻━┻</p>
                 </div>
