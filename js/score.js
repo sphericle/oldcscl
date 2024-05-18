@@ -53,12 +53,4 @@ export function round(num) {
     }
 }
 
-export function average(num) {
 // add all scores together and divide by number of scores
-
-for (let i = 0; i < record.rating; i++) {
-  average += rating[i] + "<br>";
-}
-}
-
-
