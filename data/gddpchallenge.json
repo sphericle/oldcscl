@@ -9,34 +9,34 @@
     "song-title": "Tessa Violet - Just Right (dan harrison b. remix)",
     "records": [
             {
-            "user": "limitationn",
-            "link": "https://youtu.be/zMt4mfLmByU?si=0REP2jbqaUHwsq9y",
-            "percent": 100,
-            "hz": 60
+                "user": "limitationn",
+                "link": "https://youtu.be/zMt4mfLmByU?si=0REP2jbqaUHwsq9y",
+                "percent": 100,
+                "hz": 60
             },
             {
-            "user": "Ultrobro",
-            "link": "https://youtu.be/vK78MjccJM8?si=1amwxvTXXMI2Moqo",
-            "percent": 100,
-            "hz": 60
+                "user": "Ultrobro",
+                "link": "https://youtu.be/vK78MjccJM8?si=1amwxvTXXMI2Moqo",
+                "percent": 100,
+                "hz": 60
             },
             {
-            "user": "zLineage",
-            "link": "https://www.youtube.com/watch?v=xbOImUsiXqo",
-            "percent": 100,
-            "hz": 240
+                "user": "zLineage",
+                "link": "https://www.youtube.com/watch?v=xbOImUsiXqo",
+                "percent": 100,
+                "hz": 240
             },
             {
-            "user": "TacoJed",
-            "link": "https://www.youtube.com/watch?v=xJlecaeRV9E",
-            "percent": 100,
-            "hz": 240
+                "user": "TacoJed",
+                "link": "https://www.youtube.com/watch?v=xJlecaeRV9E",
+                "percent": 100,
+                "hz": 240
             },
             {
                 "user": "netfedex97",
                 "link": "https://youtu.be/ei-yacBQhL8",
                 "percent": 100,
                 "hz": 144
-                }
+            }
     ]
 }
