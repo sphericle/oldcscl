@@ -68,7 +68,7 @@ export default {
                     <div>
                     <h2>Records</h2>
                     <p style="margin-bottom:17px" v-if="selected + 1 > 150">This level does not accept new records.</p>
-                    <p style="margin-top:8px" v-else>{{ level.records.length + 1 }} victors</p>
+                    <p style="margin-top:17px" v-else>{{ level.records.length + 1 }} victors</p>
                     </div>
                     
                     <table class="records">
