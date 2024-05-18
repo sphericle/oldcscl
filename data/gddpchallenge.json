@@ -39,11 +39,18 @@
                 "hz": 144
             },
             {
-            "user": "huntzz",
-            "link": "https://youtu.be/a2SpIQM4JnI",
-            "percent": 100,
-            "rating": 10,
-            "hz": 240
+                "user": "huntzz",
+                "link": "https://youtu.be/a2SpIQM4JnI",
+                "percent": 100,
+                "rating": 10,
+                "hz": 240
+            },
+            {
+                "user": "sphericle",
+                "link": "https://youtu.be/JoVhhOp7_Uk",
+                "percent": 100,
+                "rating": 10,
+                "hz": 240
             }
     ]
 }
