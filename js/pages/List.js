@@ -51,7 +51,7 @@ export default {
                             <p>{{ level.id }}</p>
                         </li>
                         <li>
-                            <div class="type-title-sm">Broken HZ</div>
+                            <div class="type-title-sm">Broken FPS</div>
                             <p v-if="level['brokenHz']">{{ level.brokenHz }}</p>
                             <p v-else>None</p>
                         </li>
@@ -83,7 +83,7 @@ export default {
                                 <img v-if="record.mobile" :src="\`/assets/phone-landscape\${store.dark ? '-dark' : ''}.svg\`" alt="Mobile">
                             </td>
                             <td class="hz">
-                                <p>{{ record.hz }}Hz</p>
+                                <p>{{ record.hz }}FPS</p>
                             </td>
                         </tr>
                     </table>
@@ -115,7 +115,7 @@ export default {
                         Achieved the record without using hacks (however, Click Between Frames is allowed.)
                     </p>
                     <p>
-                        FPS Bypass is allowed up to 360hz. Physics Bypass is banned.
+                        FPS Bypass is allowed up to 360 FPS. Physics Bypass is banned.
                     </p>
                     <p>
                         You must have Cheat Indicator enabled in your completion, including the Show on Endscreen setting. Unmodded versions of GD are exempt from this.
