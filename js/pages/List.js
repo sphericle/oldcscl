@@ -64,8 +64,8 @@ export default {
                             <p v-else>{{ level['song-title'] }}</p>
                         </li>
                     </ul>
-                    <h2 style="padding-bottom:2px">Records</h2>
-                    <p v-if="selected + 1 > 150" style="padding-top:2px">This level does not accept new records.</p>
+                    <h2 style="padding-bottom:0px">Records</h2>
+                    <p v-if="selected + 1 > 150" style="padding-top:0px">This level does not accept new records.</p>
                     <p v-else>{{ level.records.length + 1 }} victors</p>
                     
                     <table class="records">
