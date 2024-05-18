@@ -52,7 +52,7 @@ export default {
                         </li>
                         <li>
                             <div class="type-title-sm">Broken HZ</div>
-                            <p>None</p>
+                            <p>{{ level.brokenHz || None }}</p>
                         </li>
                         
                     </ul>
