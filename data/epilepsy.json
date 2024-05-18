@@ -1,0 +1,26 @@
+{
+    "id": 105381395,
+    "name": "epilepsy warning lol",
+    "author": "netfedex97",
+    "creators": ["netfedex97"],
+    "verifier": "netfedex97",
+    "verification": "https://youtu.be/P1UwN-pPkdk",
+    "percentToQualify": 100,
+    "song-title": "Stereo Madness",
+    "records": [
+        {
+            "user": "Zealous",
+            "link": "https://youtu.be/DKgkH_JTuiI",
+            "percent": 100,
+            "rating": 2.5,
+            "hz": 240
+        }
+        {
+            "user": "limitationn",
+            "link": "https://youtu.be/bF3wsB-L4xU?si=tMN0p1uGyUEwBXrG",
+            "percent": 100,
+            "rating": 6.0,
+            "hz": 240
+        }
+    ]
+}
