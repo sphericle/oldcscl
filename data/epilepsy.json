@@ -49,6 +49,13 @@
             "percent": 100,
             "rating": 8,
             "hz": 240
+        },
+        {
+            "user": "ultrobro",
+            "link": "https://youtu.be/p8vfYvBfIlU?si=DS0TsMgBsBViwl-d",
+            "percent": 100,
+            "rating": 8,
+            "hz": 60
         }
     ]
 }
