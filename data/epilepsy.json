@@ -21,6 +21,20 @@
             "percent": 100,
             "rating": 6.0,
             "hz": 60
+        },
+        {
+            "user": "NotDragon",
+            "link": "https://youtu.be/W8r_wSSTIDQ?si=uu0r2lnPImee1Ep6",
+            "percent": 100,
+            "rating": 6.5,
+            "hz": 330
+        },
+        {
+            "user": "Cocobuggz",
+            "link": "https://youtu.be/RsMbQXK2liE",
+            "percent": 100,
+            "rating": 10,
+            "hz": 240
         }
     ]
 }
