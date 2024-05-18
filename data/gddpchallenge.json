@@ -3,11 +3,17 @@
     "name": "GDDP Challenge",
     "author": "aespha2",
     "creators": ["aespha2"],
-    "verifier": "Zealous",
+    "verifier": "aespha2",
     "verification": "https://youtu.be/0PpIY8F0uyA",
     "percentToQualify": 100,
     "song-title": "Tessa Violet - Just Right (dan harrison b. remix)",
     "records": [
+            {
+                "user": "Zealous",
+                "link": "https://youtu.be/0PpIY8F0uyA",
+                "percent": 100,
+                "hz": 240
+            },
             {
                 "user": "limitationn",
                 "link": "https://youtu.be/zMt4mfLmByU?si=0REP2jbqaUHwsq9y",
