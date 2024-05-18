@@ -51,8 +51,9 @@ export default {
                             <p>{{ level.id }}</p>
                         </li>
                         <li>
-                            <div v-if="level['brokenHz']" class="type-title-sm">Broken HZ</div>
+                            <div class="type-title-sm">Broken HZ</div>
                             <p v-if="level['brokenHz']">{{ level.brokenHz }}</p>
+                            <p v-else>None</p>
                         </li>
                         
                     </ul>
