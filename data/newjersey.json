@@ -34,6 +34,13 @@
             "percent": 100,
             "rating": 0,
             "hz": 240
+        },
+            {
+            "user": "Cowdoom11",
+            "link": "https://www.youtube.com/watch?v=rsU2cjTR0EM",
+            "percent": 100,
+            "rating": 4,
+            "hz": 360
         }
     ]
 }
