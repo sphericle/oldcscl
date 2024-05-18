@@ -51,6 +51,13 @@
                 "percent": 100,
                 "rating": 10,
                 "hz": 240
+            },
+            {
+                "user": "Cocobuggs",
+                "link": "https://youtu.be/lrpo1P59E-g",
+                "percent": 100,
+                "rating": 9,
+                "hz": 240
             }
     ]
 }
