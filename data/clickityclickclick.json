@@ -8,6 +8,12 @@
     "percentToQualify": 100,
     "song-title": "8bit Dungeon Boss",
     "records": [
-        
+        {
+            "user": "limitationn",
+            "link": "https://youtu.be/BSixeih3puM",
+            "percent": 100,
+            "rating": 6,
+            "hz": 2000
+        }
     ]
 }
