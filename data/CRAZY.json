@@ -8,5 +8,12 @@
     "percentToQualify": 100,
     "song-title": "Creo - Crazy",
     "records": [
+        {
+            "user": "limitationn",
+            "link": "https://youtu.be/NgAdGO34BZE?si=0QiVYj8B52ufqO6Z",
+            "percent": 100,
+            "rating": 10,
+            "hz": 2000
+        }
     ]
 }
