@@ -8,6 +8,12 @@
     "percentToQualify": 100,
     "song-title": "The Hallucination",
     "records": [
-        
+        {
+            "user": "TheBlueElephant",
+            "link": "https://youtu.be/raT6Mzh-ckQ",
+            "percent": 100,
+            "rating": 9,
+            "hz": 240
+        }
     ]
 }
