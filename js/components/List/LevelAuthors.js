@@ -44,8 +44,8 @@ export default {
                     <span>{{ verifier }}</span>
                 </p>
             </template>
-            <div class="type-title-sm">Publisher</div>
-            <p class="type-body">
+            <div class="type-title-sm" v-if="creators.length == 1 && author != creators">Publisher</div>
+            <p class="type-body" v-if="creators.length == 1 && author != creators">
                 <span>{{ author }}</span>
             </p>
         </div>
