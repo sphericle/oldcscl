@@ -8,6 +8,12 @@
     "percentToQualify": 100,
     "song-title": "ImCold - Zenith",
     "records": [
-        
+        {
+            "user": "TheBlueElephant",
+            "link": "https://youtu.be/lc1uCWo0xGU",
+            "percent": 100,
+            "rating": 3,
+            "hz": 240
+        }
     ]
 }
