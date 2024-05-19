@@ -68,6 +68,7 @@ export default {
                     <div>
                     <h2>Records</h2>
                     <p style="margin-top:17px" v-if="selected + 1 > 150">This level does not accept new records.</p>
+                    <p style="margin-top:17px" v-else-if="level.records.length == 0"><b>1</b> victor</p>
                     <p style="margin-top:17px" v-else><b>{{ level.records.length + 1 }}</b> victors</p>
                     </div>
                     
