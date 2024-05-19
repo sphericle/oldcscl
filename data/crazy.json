@@ -42,6 +42,13 @@
             "percent": 100,
             "rating": 8,
             "hz": 144
+        },
+        {
+            "user": "TacoJed",
+            "link": "https://www.youtube.com/watch?v=QWL3qwuaxlc",
+            "percent": 100,
+            "rating": 8,
+            "hz": 240
         }
     ]
 }
