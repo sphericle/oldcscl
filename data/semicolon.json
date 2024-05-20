@@ -11,7 +11,14 @@
             "user": "limitationn",
             "link": "https://youtu.be/VpWlMehJacU",
             "percent": 100,
-            "rating": 6,
+            "rating": 10,
+            "hz": 240
+        },
+       {
+            "user": "TheBlueElephant",
+            "link": "https://youtu.be/KHQRd8Y1rR8",
+            "percent": 100,
+            "rating": 10,
             "hz": 240
         }
     ]
