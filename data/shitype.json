@@ -7,5 +7,12 @@
     "verification": "https://youtu.be/wMRr7XC05To",
     "percentToQualify": 100,
     "records": [
+        {
+            "user": "limitationn",
+            "link": "https://youtu.be/9FQGGnn7kw4",
+            "percent": 100,
+            "rating": 10,
+            "hz": 240
+        }
     ]
 }
