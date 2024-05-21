@@ -26,7 +26,7 @@
             "user": "limitationn",
             "link": "https://youtu.be/Cxjwg95lLfY",
             "percent": 100,
-            "rating": 0.1,
+            "rating": 9,
             "hz": 2000
         },
         {
@@ -34,6 +34,13 @@
             "link": "https://youtu.be/6KyJCflQ70w",
             "percent": 100,
             "rating": 8,
+            "hz": 240
+        },
+       {
+            "user": "K3NNY0",
+            "link": "https://youtu.be/zJyfJvBZGWc",
+            "percent": 100,
+            "rating": 10,
             "hz": 240
         }
     ]
