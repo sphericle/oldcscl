@@ -8,6 +8,12 @@
     "verification": "https://www.youtube.com/watch?v=S7pVkPMxgJ4",
     "percentToQualify": 100,
     "records": [
-       
+            {
+            "user": "TheBlueElephant",
+            "link": "https://youtu.be/68WzJf5xXxQ",
+            "percent": 100,
+            "rating": 2,
+            "hz": 240
+                }
     ]
 }
