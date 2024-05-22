@@ -92,5 +92,12 @@
             "rating": 10,
             "hz": 240
         }
+       {
+            "user": "WinDoge",
+            "link": "https://www.youtube.com/watch?v=YUjtNPWaPl4v=YQZl_JMjk04",
+            "percent": 100,
+            "rating": 7,
+            "hz": 240
+        }
     ]
 }
