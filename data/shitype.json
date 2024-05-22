@@ -27,6 +27,13 @@
             "percent": 100,
             "rating": 10,
             "hz": 240
+        },
+        {
+            "user": "WinDoge",
+            "link": "https://youtu.be/vzQs2uhQ3mY",
+            "percent": 100,
+            "rating": 3,
+            "hz": 90
         }
     ]
 }
