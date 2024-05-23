@@ -124,6 +124,13 @@
             "percent": 100,
             "rating": 7,
             "hz": 60
+        },
+        {
+            "user": "FogMello",
+            "link": "https://www.youtube.com/watch?v=uiM-plyFnl8&ab_channel=Saulgoodmello",
+            "percent": 100,
+            "rating": 10,
+            "hz": 240
         }
     ]
 }
