@@ -8,6 +8,12 @@
     "percentToQualify": 100,
     "song-title": "Jayuff - swag jazz",
     "records": [
-        
+        {
+            "user": "TheBlueElephant",
+            "link": "https://youtu.be/AQMKhhfc6kE",
+            "percent": 100,
+            "rating": 5,
+            "hz": 60
+        }
     ]
 }
