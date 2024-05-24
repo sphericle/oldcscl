@@ -9,5 +9,12 @@
     "percentToQualify": 100,
     "song-title": "~NK~ - Take Me Away",
     "records": [
+        {
+            "user": "FogMello",
+            "link": "https://www.youtube.com/watch?v=da39SSnnWS0&ab_channel=Saulgoodmello",
+            "percent": 100,
+            "rating": 9,
+            "hz": 240
+        }
     ]
 }
