@@ -41,6 +41,13 @@
             "percent": 100,
             "rating": 8,
             "hz": 240
+        },
+        {
+            "user": "The16FigureLimit",
+            "link": "https://youtu.be/YWproGEfbNM",
+            "percent": 100,
+            "rating": 0,
+            "hz": 240
         }
     ]
 }
