@@ -11,10 +11,19 @@
     "song-link": "https://www.youtube.com/watch?v=oS-DaUtHVhI",
     "records": [
         {
-            "user": "",
+            "user": "pcPositivity",
             "link": "https://youtu.be/_yBG5WA1LaA",
             "percent": 100,
+            "rating": 7,
             "hz": 480
+        }
+          {
+            "user": "mobileHater",
+            "link": "https://youtu.be/_yBG5WA1LaA",
+            "percent": 100,
+            "rating": 0.1,
+            "mobile": "true",
+            "hz": 60
         }
     ]
 }
