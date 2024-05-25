@@ -131,6 +131,9 @@ export default {
                         Achieved the record on the level that is listed on the site - please check the level ID before you submit a record
                     </p>
                     <p>
+                        Achieved the record on the main GD servers, not a private server.
+                    </p>
+                    <p>
                         Have audible, unedited clicks or taps in the video.
                     </p>
                     <p>
