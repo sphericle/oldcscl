@@ -21,6 +21,13 @@
             "percent": 100,
             "rating": 7,
             "hz": 144
+        },
+        {
+            "user": "TheBlueElephant",
+            "link": "https://youtu.be/udlTsgKtBzU",
+            "percent": 100,
+            "rating": 6,
+            "hz": 240
         }
     ]
 }
