@@ -18,15 +18,13 @@ export default {
             <template v-if="selfVerified">
                 <div class="type-title-sm">Creator & Verifier</div>
                 <p class="type-body">
-                    <a v-if="creatorChannel" href="{{ creatorChannel }}">{{ verifier }}</a>
-                        <span v-else> {{ verifier }}</span>
+                        <span> {{ verifier }}</span>
                 </p>
             </template>
             <template v-else-if="creators.length === 1"> <!-- Check if there is only one creator -->
                 <div class="type-title-sm">Creator</div>
                 <p class="type-body">
-                    <a v-if="creatorChannel" href="{{ creatorChannel }}">{{ creator }}</a>
-                        <span v-else> {{ creator }}</span>
+                        <span> {{ creator }}</span>
                 </p>
                 <div class="type-title-sm" v-if="verifier !== creators[0]">Verifier</div> <!-- Only display verifier title if verifier is different -->
                 <p class="type-body" v-if="verifier !== creators[0]">
@@ -37,8 +35,7 @@ export default {
                 <div class="type-title-sm">Creators</div>
                 <div class="type-body">
                     <template v-for="(creator, index) in creators" :key="\`creator-\$\{creator\}\`">
-                        <a v-if="creatorChannel" href="{{ creatorChannel }}">{{ creator }}</a>
-                        <span v-else> {{ creator }}</span>
+                        <span> {{ creator }}</span>
                         <span v-if="index < creators.length - 1">, </span>
                     </template>
                 </p>
