@@ -15,6 +15,13 @@
             "percent": 100,
             "rating": 9,
             "hz": 240
+        },
+        {
+            "user": "xaern",
+            "link": "https://youtu.be/BsfH4XTVkT8",
+            "percent": 100,
+            "rating": 9,
+            "hz": 60
         }
     ]
 }
