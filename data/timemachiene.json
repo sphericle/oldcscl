@@ -8,6 +8,12 @@
     "percentToQualify": 100,
     "song-title": "Time Machine",
     "records": [
-        
+        {
+            "user": "limitationn",
+            "link": "https://youtu.be/HpzI64pKbGM",
+            "percent": 100,
+            "rating": 8,
+            "hz": 240
+        }        
     ]
 }
