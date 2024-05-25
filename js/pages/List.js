@@ -60,7 +60,7 @@ export default {
                     <ul class="stats">
                         <li>
                             <div class="type-title-sm">Song</div>
-                            <p v-if="level['song-link']"><a :href="../../data/nongs/level['song-link'].mp3" target="_blank"><u>{{ level['song-title'] }}</u></a></p>
+                            <p v-if="level['song-link']"><a :href="level['song-link']" target="_blank"><u>{{ level['song-title'] }}</u></a></p>
                             <p v-else>{{ level['song-title'] }}</p>
                         </li>
                     </ul>
