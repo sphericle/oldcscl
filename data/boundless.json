@@ -54,6 +54,13 @@
             "percent": 100,
             "rating": 10,
             "hz": 576
+        },
+        {
+            "user": "FogMello",
+            "link": "https://youtu.be/KexE3RDxqTI",
+            "percent": 100,
+            "rating": 9,
+            "hz": 240
         }
     ]
 }
