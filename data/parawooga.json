@@ -28,14 +28,14 @@
             "link": "https://youtu.be/68WzJf5xXxQ",
             "percent": 100,
             "rating": 4,
-            "hz": 240
+            "hz": 60
                 },
                 {
             "user": "xaern",
             "link": "https://youtu.be/IMm25qp_yWg",
             "percent": 100,
             "rating": 10,
-            "hz": 576
+            "hz": 60
         }
     ]
 }
