@@ -145,6 +145,9 @@ export default {
                         Do not use secret routes or bug routes
                     </p>
                     <p>
+                        You cannot have another person help you with 2 player levels.
+                    </p>
+                    <p>
                         Recording must capture entire game window.
                     </p>
                     
