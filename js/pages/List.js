@@ -48,7 +48,8 @@ export default {
                         </li>
                         <li>
                             <div class="type-title-sm">ID</div>
-                            <p>{{ level.id }}</p>
+                            <p v-if="level.id == 4"><a :href="level['levelDownload']" target="_blank"><u>Click here</u></a></p>
+                            <p v-else>{{ level.id }}</p>
                         </li>
                         <li>
                             <div class="type-title-sm">Broken FPS</div>
