@@ -145,7 +145,7 @@ export default {
                         Do not use secret routes or bug routes
                     </p>
                     <p>
-                        You cannot have another person help you with 2 player levels.
+                        You cannot have another person help you with 2 player levels. You also must show a handcam in your completion if the level is 2p.
                     </p>
                     <p>
                         Recording must capture entire game window.
