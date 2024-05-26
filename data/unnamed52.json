@@ -35,6 +35,13 @@
             "percent": 100,
             "rating": 9,
             "hz": 360
+        },
+        {
+            "user": "zLineage",
+            "link": "https://youtu.be/FW_WCgzOEuI",
+            "percent": 100,
+            "rating": 7,
+            "hz": 240
         }
     ]
 }
