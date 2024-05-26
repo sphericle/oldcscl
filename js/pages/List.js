@@ -47,7 +47,8 @@ export default {
                             <p>{{ score(selected + 1, 100, 100) }}</p>
                         </li>
                         <li>
-                            <div class="type-title-sm">ID</div>
+                            <div v-if="level.id == 4" class="type-title-sm">GDShare File</div>
+                            <div class="type-title-sm" v-else>ID</div>
                             <p v-if="level.id == 4"><a :href="level['levelDownload']" target="_blank"><u>Download</u></a></p>
                             <p v-else>{{ level.id }}</p>
                         </li>
