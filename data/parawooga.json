@@ -36,6 +36,13 @@
             "percent": 100,
             "rating": 10,
             "hz": 60
+        },
+               {
+            "user": "limitationn",
+            "link": "https://youtu.be/VZ_N9PWwiZM?si=xpPQhJ4lu0-MDKWY",
+            "percent": 100,
+            "rating": -999,
+            "hz": 60
         }
     ]
 }
