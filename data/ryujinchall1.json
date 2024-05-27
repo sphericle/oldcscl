@@ -8,26 +8,33 @@
     "percentToQualify": 100,
     "song-title": "Dimrain47- At The Speed Of Light",
     "records": [
-            {
+        {
             "user": "Koozoo2000",
             "link": "https://www.youtube.com/watch?v=w3XixqCOe4o",
             "percent": 100,
             "rating": 0,
             "hz": 360
-             },
+        },
             {
             "user": "TheBlueElephant",
             "link": "https://youtu.be/JX7X9DAZtcc",
             "percent": 100,
             "rating": 6,
             "hz": 240
-             },
-            {
+        },
+        {
             "user": "limitationn",
             "link": "https://youtu.be/dMUU1CcIYWs",
             "percent": 100,
             "rating": 8,
             "hz": 240
-             }
+        },
+        {
+            "user": "K3NNYY0",
+            "link": "https://youtu.be/NiSF2Lwnnk4",
+            "percent": 100,
+            "rating": 7,
+            "hz": 240
+        }
     ]
 }
