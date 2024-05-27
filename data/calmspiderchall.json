@@ -1,1 +1,23 @@
-{}
+{
+    "id": 105685912,
+    "name": "Calm Spider Chall",
+    "author": "netfedex97",
+    "creators": [
+        "netfedex97"
+    ],
+    "verifier": "netfedex97",
+    "verification": "https://youtu.be/fT7x_6Lu-Zc",
+    "brokenHz": "60, 144",
+    "percentToQualify": 100,
+    "song-title": "1f1n1ty - Calm Craggy Area Remix",
+    "song-link": "https://www.youtube.com/watch?v=oS-DaUtHVhI",
+    "records": [
+        {
+            "user": "TheBlueElephant",
+            "link": "https://youtu.be/JVfBQLQn8ss",
+            "percent": 100,
+            "rating": 10,
+            "hz": 240
+        }
+    ]
+}
