@@ -77,7 +77,9 @@ export default {
                     <table class="records">
                         <tr v-for="record in level.records" class="record">
                             <td class="percent">
-                                <p v-if="record['rating']">{{ Math.round(record.rating) }}/10</p>
+                                <p v-if="record.rating > 10">10/10</p>
+                                <p v-else-if="record.rating < 0">0/10</p>
+                                <p v-else-if="record['rating']">{{ Math.round(record.rating) }}/10</p>
                             </td>
                             <td class="user">
                                 <a :href="record.link" target="_blank" class="type-label-lg">{{ record.user }}</a>
