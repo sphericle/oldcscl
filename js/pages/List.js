@@ -123,7 +123,7 @@ export default {
                         Achieved the record without using hacks (however, Click Between Frames is allowed.)
                     </p>
                     <p>
-                        FPS Bypass is allowed up to ANY FPS. Physics Bypass is banned.
+                        FPS Bypass is allowed, but Physics Bypass is banned.
                     </p>
                     <p>
                         You must have Cheat Indicator enabled in your completion, including the Show on Endscreen setting. Unmodded versions of GD are exempt from this.
