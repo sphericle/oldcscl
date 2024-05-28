@@ -8,7 +8,13 @@
     "percentToQualify": 100,
     "song-title": "Odesza (Ft. Zyra)- Say My Name",
     "records": [
-        
+            {
+            "user": "TheBlueElephant",
+            "link": "https://youtu.be/pUVxUjPYPL4",
+            "percent": 100,
+            "rating": 4,
+            "hz": 60
+            }
     ]
 }
 
