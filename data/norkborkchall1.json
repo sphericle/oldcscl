@@ -12,5 +12,12 @@
     "song-title": "Ragnarok - Periphery",
     "song-link": "https://drive.google.com/file/d/1bwc30wkXDlp9IFJu8HlikocM1d7lo6UM/view?usp=drive_link",
     "records": [
+        {
+            "user": "Koozoo2000",
+            "link": "https://www.youtube.com/watch?v=pnWQtJkxTKU",
+            "percent": 100,
+            "rating": 9,
+            "hz": 360
+        }
     ]
 }
