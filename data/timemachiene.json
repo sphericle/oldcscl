@@ -70,6 +70,13 @@
             "percent": 100,
             "rating": 5,
             "hz": 144
+        },
+        {
+            "user": "Zealous",
+            "link": "https://youtu.be/wP00I67_9UY",
+            "percent": 100,
+            "rating": 7,
+            "hz": 240
         }
     ]
 }
