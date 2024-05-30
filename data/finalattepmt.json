@@ -35,6 +35,13 @@
             "percent": 100,
             "rating": 10,
             "hz": 240
+        },
+        {
+            "user": "acsua",
+            "link": "https://youtu.be/hnY1hRuq2rQ?si=Js-Onc4ikvkwvi0x",
+            "percent": 100,
+            "rating": 9,
+            "hz": 144
         }
     ]
 }
