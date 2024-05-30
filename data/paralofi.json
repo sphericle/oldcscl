@@ -8,12 +8,19 @@
     "percentToQualify": 100,
     "song-title": "Late Night Lo-fi",
     "records": [
-               {
+        {
             "user": "limitationn",
             "link": "https://youtu.be/8EYLZ6exAi0",
             "percent": 100,
             "rating": 10,
             "hz": 60
-               }  
+         },
+        {
+            "user": "TheBlueElephant",
+            "link": "https://youtu.be/g0rjUBtKyo4",
+            "percent": 100,
+            "rating": 7,
+            "hz": 60
+         } 
     ]
 }
