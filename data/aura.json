@@ -1,0 +1,26 @@
+{
+    "id": 105749771,
+    "name": "Aura",
+    "author": "K3NNYY0",
+    "creators": ["The16FigureLimit"],
+    "verifier": "K3NNYY0",
+    "verification": "https://youtu.be/7D73Zfwp6f0",
+    "percentToQualify": 100,
+    "song-title": "Creo - Aura",
+    "records": [
+        {
+            "user": "TheBlueElephant",
+            "link": "https://youtu.be/g0rjUBtKyo4",
+            "percent": 100,
+            "rating": 8,
+            "hz": 240
+        },
+        {
+            "user": "limitationn",
+            "link": "https://youtu.be/zs473460p2Y",
+            "percent": 100,
+            "rating": 10,
+            "hz": 240
+        }
+    ]
+}
