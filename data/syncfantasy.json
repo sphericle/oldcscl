@@ -9,6 +9,19 @@
     "levelDownload": "https://cdn.discordapp.com/attachments/1245229333191200842/1245229381283217478/sync_fantasy.gmd?ex=6659f7fb&is=6658a67b&hm=11c730ec614a1a0c935d4b0b1ac4b2feeb87da9202929cdb97c7c296baa2f162&",
     "song-title": "Her Name Is Yubin Lady",
     "records": [
-        
+        {
+            "user": "TheBlueElephant",
+            "link": "https://youtu.be/LKJM6lGdlq8",
+            "percent": 100,
+            "rating": 10,
+            "hz": 240
+        },
+        {
+            "user": "limitationn",
+            "link": "https://youtu.be/bF3wsB-L4xU?si=tMN0p1uGyUEwBXrG",
+            "percent": 100,
+            "rating": 10,
+            "hz": 240
+        } 
     ]
 }
