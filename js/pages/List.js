@@ -40,6 +40,7 @@ export default {
                 <div class="level" v-if="level && level.id!=0">
                     <h1>{{ level.name }}</h1>
                     <LevelAuthors :author="level.author" :creators="level.creators" :verifier="level.verifier"></LevelAuthors>
+                    <h3 v-if="averageRatings[level.id] !== 0" style="margin-top:-5px;margin-bottom:-10px">Average Rating: {{ averageRatings[level.id] }}/10</h3>
                     <iframe class="video" id="videoframe" :src="video" frameborder="0"></iframe>
                     <ul class="stats">
                         <li>
