@@ -53,4 +53,28 @@ export function round(num) {
     }
 }
 
+
+export function calculateAverageRatings(levels) {
+    const averageRatings = {};
+
+    levels.forEach(([level, err]) => {
+        if (err || !level) return;
+
+        const records = level.records;
+        let totalRating = 0;
+        let ratingCount = 0;
+
+        records.forEach(record => {
+            if (record && record.rating !== undefined) {
+                totalRating += record.rating;
+                ratingCount += 1;
+            }
+        });
+
+        averageRatings[level.id] = ratingCount > 0 ? (totalRating / ratingCount).toFixed(2) : 0;
+    });
+
+    return averageRatings;
+}
+
 // add all scores together and divide by number of scores
