@@ -84,6 +84,13 @@
             "percent": 100,
             "rating": 6,
             "hz": 240
+        },
+        {
+            "user": "Zealous",
+            "link": "https://www.youtube.com/watch?v=EOS-73Z-SBE&ab_channel=zel",
+            "percent": 100,
+            "rating": 1,
+            "hz": 240
         }
     ]
 }
