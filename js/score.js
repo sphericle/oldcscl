@@ -66,24 +66,16 @@ export function calculateAverageRatings(levels) {
 
         records.forEach(record => {
             if (record && record.rating !== undefined) {
-                totalRating += record.rating;
+                // Clamp the individual rating between 0 and 10
+                const clampedRating = Math.max(0, Math.min(10, record.rating));
+                totalRating += clampedRating;
                 ratingCount += 1;
             }
         });
 
-        averageRatings[level.id] = ratingCount > 0 ? (totalRating / ratingCount).toFixed(2) : 69;
-        
-        
-       /* if averageRatings > 10 {
-            const averageRatings = 10;
-        }
-        
-        if averageRatings < 0 {
-            const averageRatings = 0;
-            
-        }
-        */
-        
+        const averageRating = ratingCount > 0 ? (totalRating / ratingCount).toFixed(2) : 69;
+
+        averageRatings[level.id] = averageRating;
     });
 
     return averageRatings;
