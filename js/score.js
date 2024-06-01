@@ -71,9 +71,9 @@ export function calculateAverageRatings(levels) {
             }
         });
 
-        averageRatings[level.id] = ratingCount > 0 ? (totalRating / ratingCount).toFixed(2) : 0;
+        averageRatings[level.id] = ratingCount > 0 ? (totalRating / ratingCount).toFixed(2) : 69;
         
-        /*
+        
         if averageRatings[level.id] > 10 {
             let averageRatings[level.id] = 10;
         }
@@ -82,7 +82,10 @@ export function calculateAverageRatings(levels) {
             let averageRatings[level.id] = 0;
             
         }
-        */
+        else {
+        console.log("WOAHHH GET OUT OF THE CONSOLE");
+        }
+        
     });
 
     return averageRatings;
