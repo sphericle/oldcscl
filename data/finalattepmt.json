@@ -56,6 +56,13 @@
             "percent": 100,
             "rating": 7,
             "hz": 9
+        },
+        {
+            "user": "invest",
+            "link": "https://youtu.be/vyHg5xaPFxc",
+            "percent": 100,
+            "rating": 8,
+            "hz": 360
         }
     ]
 }
