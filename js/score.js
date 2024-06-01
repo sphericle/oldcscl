@@ -78,13 +78,11 @@ export function calculateAverageRatings(levels) {
             let averageRatings[level.id] = 10;
         }
         
-        else if averageRatings[level.id] < 0 {
+        if averageRatings[level.id] < 0 {
             let averageRatings[level.id] = 0;
             
         }
-        else {
-        console.log("WOAHHH GET OUT OF THE CONSOLE");
-        }
+        
         
     });
 
