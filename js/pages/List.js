@@ -1,6 +1,6 @@
 import { store } from "../main.js";
 import { embed } from "../util.js";
-import { score } from "../score.js";
+import { score, calculateAverageRatings } from "../score.js";
 import { fetchEditors, fetchList } from "../content.js";
 
 import Spinner from "../components/Spinner.js";
@@ -180,6 +180,7 @@ export default {
         store
     }),
     computed: {
+        
         level() {
             return this.list[this.selected][0];
         },
@@ -199,6 +200,7 @@ export default {
         // Hide loading spinner
         this.list = await fetchList();
         this.editors = await fetchEditors();
+        this.averageRatings = calculateAverageRatings(this.list);
 
         // Error handling
         if (!this.list) {
@@ -223,5 +225,6 @@ export default {
     methods: {
         embed,
         score,
+        calculateAverageRatings,
     },
 };
