@@ -74,7 +74,7 @@ export function calculateAverageRatings(levels) {
         averageRatings[level.id] = ratingCount > 0 ? (totalRating / ratingCount).toFixed(2) : 69;
         
         
-        if averageRatings > 10 {
+       /* if averageRatings > 10 {
             const averageRatings = 10;
         }
         
@@ -82,7 +82,7 @@ export function calculateAverageRatings(levels) {
             const averageRatings = 0;
             
         }
-        
+        */
         
     });
 
