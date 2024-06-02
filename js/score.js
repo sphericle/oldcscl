@@ -67,7 +67,7 @@ export function calculateAverageRatings(levels) {
         records.forEach(record => {
             if (record && record.rating !== undefined) {
                 // Clamp the individual rating between 0 and 10
-                const clampedRating = Math.max(0, Math.min(10, record.rating));
+                const clampedRating = Math.max(0, Math.min(10, Math.round(record.rating)));
                 totalRating += clampedRating;
                 ratingCount += 1;
             }
