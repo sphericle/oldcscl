@@ -73,7 +73,7 @@ export function calculateAverageRatings(levels) {
             }
         });
 
-        let averageRating = ratingCount > 0 ? (totalRating / ratingCount).toFixed(2) : 69;
+        let averageRating = ratingCount > 0 ? (totalRating / ratingCount).toFixed(2) : 'None';
         averageRating = parseFloat(averageRating).toString();
         averageRating = averageRating.endsWith('.00') ? averageRating.slice(0, -3) : averageRating;
 
