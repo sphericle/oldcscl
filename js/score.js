@@ -74,7 +74,7 @@ export function calculateAverageRatings(levels) {
         });
 
         let averageRating = ratingCount > 0 ? (totalRating / ratingCount).toFixed(2) : 69;
-        averageRating = averageRating.endsWith('.00') ? averageRating.slice(0, -3) : averageRating;
+        averageRating = averageRating.endsWith(.00) ? averageRating.slice(0, -3) : averageRating;
 
         averageRatings[level.id] = averageRating;
     });
