@@ -73,10 +73,11 @@ export function calculateAverageRatings(levels) {
             }
         });
 
-        let averageRating = ratingCount > 0 ? (totalRating / ratingCount).toFixed(2) : 'None';
+        let averageRating = ratingCount > 0 ? (totalRating / ratingCount).toFixed(2) : 69;
         averageRating = parseFloat(averageRating).toString();
         averageRating = averageRating.endsWith('.00') ? averageRating.slice(0, -3) : averageRating;
-
+        averageRating = +averageRating;
+        
         averageRatings[level.id] = averageRating;
     });
 
