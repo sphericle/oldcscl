@@ -10,6 +10,12 @@
     "percentToQualify": 100,
     "song-title": "Jumper - Solar Wind",
     "records": [
-        
+        {
+            "user": "TheBlueElephant",
+            "link": "https://youtu.be/g0rjUBtKyo4",
+            "percent": 100,
+            "rating": 10,
+            "hz": 240
+        }
     ]
 }
