@@ -18,7 +18,8 @@
             "link": "https://youtu.be/_yBG5WA1LaA",
             "percent": 100,
             "rating": 7,
-            "hz": 480
+            "hz": 480,
+            "reviewed": true
         },
           {
             "user": "mobileHater",
@@ -26,7 +27,8 @@
             "percent": 100,
             "rating": 0.1,
             "mobile": "true",
-            "hz": 60
+            "hz": 60,
+            "reviewed": true
         }
     ]
 }
