@@ -9,9 +9,11 @@ async function fetchBannedUsers() {
     try {
         const result = await fetch(`${dir}/_bannedUsers.json`);
         if (!result.ok) {
-            throw new Error(`Failed to fetch _bannedUsers.json: ${result.statusText}`);
+            const errorText = await result.text();
+            throw new Error(`Failed to fetch _bannedUsers.json: ${result.status} ${result.statusText}. Response: ${errorText}`);
         }
         const bannedData = await result.json();
+        console.log('Banned users fetched:', bannedData.bannedUsers); // Logging banned users
         return bannedData.bannedUsers || [];
     } catch (error) {
         console.error('Error fetching banned users:', error);
@@ -23,7 +25,8 @@ export async function fetchList() {
     try {
         const listResult = await fetch(`${dir}/_list.json`);
         if (!listResult.ok) {
-            throw new Error(`Failed to fetch _list.json: ${listResult.statusText}`);
+            const errorText = await listResult.text();
+            throw new Error(`Failed to fetch _list.json: ${listResult.status} ${listResult.statusText}. Response: ${errorText}`);
         }
         const list = await listResult.json();
         return await Promise.all(
@@ -31,7 +34,8 @@ export async function fetchList() {
                 try {
                     const levelResult = await fetch(`${dir}/${path}.json`);
                     if (!levelResult.ok) {
-                        throw new Error(`Failed to fetch ${path}.json: ${levelResult.statusText}`);
+                        const errorText = await levelResult.text();
+                        throw new Error(`Failed to fetch ${path}.json: ${levelResult.status} ${levelResult.statusText}. Response: ${errorText}`);
                     }
                     const level = await levelResult.json();
                     return [
@@ -58,7 +62,8 @@ export async function fetchEditors() {
     try {
         const editorsResults = await fetch(`${dir}/_editors.json`);
         if (!editorsResults.ok) {
-            throw new Error(`Failed to fetch _editors.json: ${editorsResults.statusText}`);
+            const errorText = await editorsResults.text();
+            throw new Error(`Failed to fetch _editors.json: ${editorsResults.status} ${editorsResults.statusText}. Response: ${errorText}`);
         }
         const editors = await editorsResults.json();
         return editors;
@@ -88,6 +93,8 @@ export async function fetchLeaderboard() {
         level.records = level.records.filter(
             (record) => !bannedUsers.includes(record.user)
         );
+
+        console.log(`Level: ${level.name}, Records after filtering:`, level.records); // Logging filtered records
 
         // Check if verifier is banned
         let verifier = Object.keys(scoreMap).find(
