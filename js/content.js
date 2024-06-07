@@ -6,38 +6,50 @@ import { round, score } from './score.js';
 const dir = '/data';
 
 async function fetchBannedUsers() {
-    const result = await fetch(`${dir}/_bannedUsers.json`);
-    const bannedData = await result.json();
-    return bannedData.bannedUsers || [];
+    try {
+        const result = await fetch(`${dir}/_bannedUsers.json`);
+        if (!result.ok) {
+            throw new Error(`Failed to fetch _bannedUsers.json: ${result.statusText}`);
+        }
+        const bannedData = await result.json();
+        return bannedData.bannedUsers || [];
+    } catch (error) {
+        console.error('Error fetching banned users:', error);
+        return [];
+    }
 }
 
 export async function fetchList() {
-    const listResult = await fetch(`${dir}/_list.json`);
     try {
+        const listResult = await fetch(`${dir}/_list.json`);
+        if (!listResult.ok) {
+            throw new Error(`Failed to fetch _list.json: ${listResult.statusText}`);
+        }
         const list = await listResult.json();
         return await Promise.all(
             list.map(async (path, rank) => {
-                const levelResult = await fetch(`${dir}/${path}.json`);
                 try {
+                    const levelResult = await fetch(`${dir}/${path}.json`);
+                    if (!levelResult.ok) {
+                        throw new Error(`Failed to fetch ${path}.json: ${levelResult.statusText}`);
+                    }
                     const level = await levelResult.json();
                     return [
                         {
                             ...level,
                             path,
-                            records: level.records.sort(
-                                (a, b) => b.percent - a.percent,
-                            ),
+                            records: level.records.sort((a, b) => b.percent - a.percent),
                         },
                         null,
                     ];
-                } catch {
-                    console.error(`Failed to load level #${rank + 1} ${path}.`);
+                } catch (error) {
+                    console.error(`Failed to load level #${rank + 1} ${path}:`, error);
                     return [null, path];
                 }
-            }),
+            })
         );
-    } catch {
-        console.error(`Failed to load list.`);
+    } catch (error) {
+        console.error('Failed to load list:', error);
         return null;
     }
 }
@@ -45,9 +57,13 @@ export async function fetchList() {
 export async function fetchEditors() {
     try {
         const editorsResults = await fetch(`${dir}/_editors.json`);
+        if (!editorsResults.ok) {
+            throw new Error(`Failed to fetch _editors.json: ${editorsResults.statusText}`);
+        }
         const editors = await editorsResults.json();
         return editors;
-    } catch {
+    } catch (error) {
+        console.error('Error fetching editors:', error);
         return null;
     }
 }
@@ -55,6 +71,10 @@ export async function fetchEditors() {
 export async function fetchLeaderboard() {
     const bannedUsers = await fetchBannedUsers();
     const list = await fetchList();
+
+    if (!list) {
+        return [[], ['Failed to fetch level list']];
+    }
 
     const scoreMap = {};
     const errs = [];
