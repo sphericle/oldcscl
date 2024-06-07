@@ -5,6 +5,12 @@ import { round, score } from './score.js';
  */
 const dir = '/data';
 
+async function fetchBannedUsers() {
+    const result = await fetch(`${dir}/_bannedUsers.json`);
+    const bannedData = await result.json();
+    return bannedData.bannedUsers || [];
+}
+
 export async function fetchList() {
     const listResult = await fetch(`${dir}/_list.json`);
     try {
@@ -47,6 +53,7 @@ export async function fetchEditors() {
 }
 
 export async function fetchLeaderboard() {
+    const bannedUsers = await fetchBannedUsers();
     const list = await fetchList();
 
     const scoreMap = {};
@@ -57,10 +64,19 @@ export async function fetchLeaderboard() {
             return;
         }
 
-        // Verification
-        const verifier = Object.keys(scoreMap).find(
+        // Check if verifier is banned
+        let verifier = Object.keys(scoreMap).find(
             (u) => u.toLowerCase() === level.verifier.toLowerCase(),
         ) || level.verifier;
+
+        if (bannedUsers.includes(verifier)) {
+            if (level.records.length > 0) {
+                verifier = level.records[0].user;
+            } else {
+                return;
+            }
+        }
+
         scoreMap[verifier] ??= {
             verified: [],
             completed: [],
@@ -79,6 +95,9 @@ export async function fetchLeaderboard() {
             const user = Object.keys(scoreMap).find(
                 (u) => u.toLowerCase() === record.user.toLowerCase(),
             ) || record.user;
+            
+            if (bannedUsers.includes(user)) return;
+
             scoreMap[user] ??= {
                 verified: [],
                 completed: [],
