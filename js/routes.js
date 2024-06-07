@@ -1,7 +1,7 @@
 import List from './pages/List.js';
 import Leaderboard from './pages/Leaderboard.js';
 import Roulette from './pages/Roulette.js';
-import SubmitGuidelines from '.pages/SubmitGuidelines.js';
+import SubmitGuidelines from '.pages/Guidelines.js';
 
 export default [
     { path: '/', component: List },
