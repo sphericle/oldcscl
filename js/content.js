@@ -12,9 +12,12 @@ async function fetchBannedUsers() {
             const errorText = await result.text();
             throw new Error(`Failed to fetch _bannedUsers.json: ${result.status} ${result.statusText}. Response: ${errorText}`);
         }
-        const bannedData = await result.json();
-        console.log('Banned users fetched:', bannedData.bannedUsers); // Logging banned users
-        return bannedData.bannedUsers || [];
+        const responseText = await result.text();
+        console.log('Raw response from _bannedUsers.json:', responseText); // Log raw response
+        const bannedData = JSON.parse(responseText);
+        const bannedUsers = (bannedData.bannedRecords || []).concat(bannedData.bannedCreators || []);
+        console.log('Parsed banned users:', bannedUsers); // Log parsed banned users
+        return bannedUsers;
     } catch (error) {
         console.error('Error fetching banned users:', error);
         return [];
