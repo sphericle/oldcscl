@@ -1,230 +1,296 @@
-import { store } from "../main.js";
-import { embed } from "../util.js";
-import { score, calculateAverageRatings } from "../score.js";
-import { fetchEditors, fetchList } from "../content.js";
+import { fetchList } from '../content.js';
+import { getThumbnailFromId, getYoutubeIdFromUrl, shuffle } from '../util.js';
 
-import Spinner from "../components/Spinner.js";
-import LevelAuthors from "../components/List/LevelAuthors.js";
-
-const roleIconMap = {
-    owner: "crown",
-    admin: "user-gear",
-    helper: "user-shield",
-    dev: "code",
-    trial: "user-lock",
-};
+import Spinner from '../components/Spinner.js';
+import Btn from '../components/Btn.js';
 
 export default {
-    components: { Spinner, LevelAuthors },
+    components: { Spinner, Btn },
     template: `
         <main v-if="loading">
             <Spinner></Spinner>
         </main>
-        <main v-else class="page-list">
-            <div class="list-container">
-                <table class="list" v-if="list">
-                    <tr v-for="([level, err], i) in list">
-                        <td class="rank">
-                            <p v-if="i + 1 <= 150" class="type-label-lg">#{{ i + 1 }}</p>
-                            <p v-else class="type-label-lg">Legacy</p>
-                        </td>
-                        <td class="level" :class="{ 'active': selected == i, 'error': !level }">
-                            <button @click="selected = i">
-                                <span class="type-label-lg">{{ level?.name || \`Error (\${err}.json)\` }}</span>
-                            </button>
-                        </td>
-                    </tr>
-                </table>
+        <main v-else class="page-roulette">
+            <div class="sidebar">
+                <p class="type-label-md" style="color: #aaa">
+                    Shameless copy of the Extreme Demon Roulette by <a href="https://matcool.github.io/extreme-demon-roulette/" target="_blank">matcool</a>.
+                </p>
+                <form class="options">
+                    <div class="check">
+                        <input type="checkbox" id="main" value="Main List" v-model="useMainList">
+                        <label for="main">Main List</label>
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" id="extended" value="Extended List" v-model="useExtendedList">
+                        <label for="extended">Extended List</label>
+                    </div>
+                    <Btn @click.native.prevent="onStart">{{ levels.length === 0 ? 'Start' : 'Restart'}}</Btn>
+                </form>
+                <p class="type-label-md" style="color: #aaa">
+                    The roulette saves automatically.
+                </p>
+                <form class="save">
+                    <p>Manual Load/Save</p>
+                    <div class="btns">
+                        <Btn @click.native.prevent="onImport">Import</Btn>
+                        <Btn :disabled="!isActive" @click.native.prevent="onExport">Export</Btn>
+                    </div>
+                </form>
             </div>
-            <div class="level-container">
-                <div class="level" v-if="level && level.id!=0">
-                    <h1>{{ level.name }}</h1>
-                    <LevelAuthors :author="level.author" :creators="level.creators" :verifier="level.verifier"></LevelAuthors>
-                    <h3 v-if="averageRatings[level.id] !== 69" style="margin-top:-5px;margin-bottom:-10px">Average Rating: {{ averageRatings[level.id] }}/10</h3>
-                    <iframe class="video" id="videoframe" :src="video" frameborder="0"></iframe>
-                    <ul class="stats">
-                        <li>
-                            <div class="type-title-sm">Points when completed</div>
-                            <p>{{ score(selected + 1, 100, 100) }}</p>
-                        </li>
-                        <li>
-                            <div v-if="level.id == 4" class="type-title-sm">GDShare File</div>
-                            <div class="type-title-sm" v-else>ID</div>
-                            <p v-if="level.id == 4"><a :href="level['levelDownload']" target="_blank"><u>Download</u></a></p>
-                            <p v-else>{{ level.id }}</p>
-                        </li>
-                        <li>
-                            <div class="type-title-sm">Broken FPS</div>
-                            <p v-if="level['brokenHz']">{{ level.brokenHz }}</p>
-                            <p v-else>None</p>
-                        </li>
-                        
-                    </ul>
-                    <ul class="stats">
-                        <li>
-                            <div class="type-title-sm">Song</div>
-                            <p v-if="level['song-link']"><a :href="level['song-link']" target="_blank"><u>{{ level['song-title'] }}</u></a></p>
-                            <p v-else>{{ level['song-title'] }}</p>
-                        </li>
-                    </ul>
-                    
-                    <div>
-                    <h2>Records</h2>
-                    <p style="margin-top:17px" v-if="selected + 1 > 150">This level does not accept new records.</p>
-                    <p style="margin-top:17px" v-else-if="level.records.length == 0"><b>1</b> victor</p>
-                    <p style="margin-top:17px" v-else><b>{{ level.records.length + 1 }}</b> victors</p>
-                    </div>
-                    
-                    <table class="records">
-                        <tr v-for="record in level.records" class="record">
-                            <td class="percent">
-                                <p v-if="record.rating > 10">10/10</p>
-                                <p v-else-if="record.rating < 0">0/10</p>
-                                <p v-else-if="record['rating']">{{ Math.round(record.rating) }}/10</p>
-                            </td>
-                            <td class="user">
-                                <a :href="record.link" target="_blank" class="type-label-lg">{{ record.user }}</a>
-                            </td>
-                            <td class="mobile">
-                                <img v-if="record.mobile" :src="\`/assets/phone-landscape\${store.dark ? '-dark' : ''}.svg\`" alt="Mobile">
-                            </td>
-                            <td class="hz">
-                                <p>{{ record.hz }}FPS</p>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <div v-else class="level" style="height: 100%; justify-content: center; align-items: center;">
-                    <p>(ノಠ益ಠ)ノ彡┻━┻</p>
-                </div>
-            </div>
-            <div class="meta-container">
-                <div class="meta">
-                    <div class="errors" v-show="errors.length > 0">
-                        <p class="error" v-for="error of errors">{{ error }}</p>
-                    </div>
-                    <div class="og">
-                        <p class="type-label-md">Website layout made by <a href="https://tsl.pages.dev/" target="_blank">TheShittyList</a>. Some code from <a href="https://laylist.pages.dev/" target="_blank">The Layout List</a>.</p>
-                    </div>
-                    <div class="og">
-                    <p class="type-label-md">Find an issue with the website? (NOT the list itself). <a href="https://github.com/sphericle/ClicksyncChallengeList/issues" target="_blank">Report it on the website!</a>.</p>
-                </div>
-                    <template v-if="editors">
-                        <h3>List Editors</h3>
-                        <ol class="editors">
-                            <li v-for="editor in editors">
-                                <img :src="\`/assets/\${roleIconMap[editor.role]}\${store.dark ? '-dark' : ''}.svg\`" :alt="editor.role">
-                                <a v-if="editor.link" class="type-label-lg link" target="_blank" :href="editor.link">{{ editor.name }}</a>
-                                <p v-else>{{ editor.name }}</p>
-                            </li>
-                        </ol>
+            <section class="levels-container">
+                <div class="levels">
+                    <template v-if="levels.length > 0">
+                        <!-- Completed Levels -->
+                        <div class="level" v-for="(level, i) in levels.slice(0, progression.length)">
+                            <a :href="level.video" class="video">
+                                <img :src="getThumbnailFromId(getYoutubeIdFromUrl(level.video))" alt="">
+                            </a>
+                            <div class="meta">
+                                <p>#{{ level.rank }}</p>
+                                <h2>{{ level.name }}</h2>
+                                <p style="color: #00b54b; font-weight: 700">{{ progression[i] }}%</p>
+                            </div>
+                        </div>
+                        <!-- Current Level -->
+                        <div class="level" v-if="!hasCompleted">
+                            <a :href="currentLevel.video" target="_blank" class="video">
+                                <img :src="getThumbnailFromId(getYoutubeIdFromUrl(currentLevel.video))" alt="">
+                            </a>
+                            <div class="meta">
+                                <p>#{{ currentLevel.rank }}</p>
+                                <h2>{{ currentLevel.name }}</h2>
+                                <p>{{ currentLevel.id }}</p>
+                            </div>
+                            <form class="actions" v-if="!givenUp">
+                                <input type="number" v-model="percentage" :placeholder="placeholder" :min="currentPercentage + 1" max=100>
+                                <Btn @click.native.prevent="onDone">Done</Btn>
+                                <Btn @click.native.prevent="onGiveUp" style="background-color: #e91e63;">Give Up</Btn>
+                            </form>
+                        </div>
+                        <!-- Results -->
+                        <div v-if="givenUp || hasCompleted" class="results">
+                            <h1>Results</h1>
+                            <p>Number of levels: {{ progression.length }}</p>
+                            <p>Highest percent: {{ currentPercentage }}%</p>
+                            <Btn v-if="currentPercentage < 99 && !hasCompleted" @click.native.prevent="showRemaining = true">Show remaining levels</Btn>
+                        </div>
+                        <!-- Remaining Levels -->
+                        <template v-if="givenUp && showRemaining">
+                            <div class="level" v-for="(level, i) in levels.slice(progression.length + 1, levels.length - currentPercentage + progression.length)">
+                                <a :href="level.video" target="_blank" class="video">
+                                    <img :src="getThumbnailFromId(getYoutubeIdFromUrl(level.video))" alt="">
+                                </a>
+                                <div class="meta">
+                                    <p>#{{ level.rank }}</p>
+                                    <h2>{{ level.name }}</h2>
+                                    <p style="color: #d50000; font-weight: 700">{{ currentPercentage + 2 + i }}%</p>
+                                </div>
+                            </div>
+                        </template>
                     </template>
-                    <h3>Submission Requirements</h3>
-                    <p>
-                        Achieved the record without using hacks (however, Click Between Frames is allowed.) A list of allowed hacks in Mega Hack can be found <a href="https://docs.google.com/spreadsheets/d/1evE4nXATxRAQWu2Ajs54E6cVUqHBoSid8I7JauJnOzg/edit#gid=0"><u>here.</u></a>
-                    </p>
-                    <p>
-                        FPS Bypass is allowed, but Physics Bypass is banned.
-                    </p>
-                    <p>
-                        You must have Cheat Indicator enabled in your completion, including the Show on Endscreen setting. Unmodded versions of GD are exempt from this.
-                    </p>
-                    <p>
-                        If you do not have any mods installed (including MegaHack, Geode), please enable the Show Info Label setting.
-                    </p>
-                    <p>
-                        Achieved the record on the level that is listed on the site - please check the level ID before you submit a record
-                    </p>
-                    <p>
-                        Achieved the record on the main GD servers, not a private server.
-                    </p>
-                    <p>
-                        Have audible, unedited clicks or taps in the video.
-                    </p>
-                    <p>
-                        The recording must have a previous attempt and entire death animation shown before the completion, unless the completion is on the first attempt.
-                    </p>
-                    <p>
-                        Do not use secret routes or bug routes
-                    </p>
-                    <p>
-                        You cannot have another person help you with 2 player levels. You also must show a handcam in your completion if the level is 2p.
-                    </p>
-                    <p>
-                        Recording must capture entire game window.
-                    </p>
-                    
-
-
-
-
-
-                    <p> 
-
-
-
-
-                    </p>
-                    <p>Join the <u><a href="https://discord.gg/W7Eqqj8NG2">Discord</a></u> to submit a record or challenge!</p>
+                </div>
+            </section>
+            <div class="toasts-container">
+                <div class="toasts">
+                    <div v-for="toast in toasts" class="toast">
+                        <p>{{ toast }}</p>
+                    </div>
                 </div>
             </div>
         </main>
     `,
     data: () => ({
-        list: [],
-        editors: [],
-        loading: true,
-        selected: 0,
-        errors: [],
-        roleIconMap,
-        store
+        loading: false,
+        levels: [],
+        progression: [], // list of percentages completed
+        percentage: undefined,
+        givenUp: false,
+        showRemaining: false,
+        useMainList: true,
+        useExtendedList: true,
+        toasts: [],
+        fileInput: undefined,
     }),
-    computed: {
-        
-        level() {
-            return this.list[this.selected][0];
-        },
-        video() {
-            if (!this.level.showcase) {
-                return embed(this.level.verification);
-            }
+    mounted() {
+        // Create File Input
+        this.fileInput = document.createElement('input');
+        this.fileInput.type = 'file';
+        this.fileInput.multiple = false;
+        this.fileInput.accept = '.json';
+        this.fileInput.addEventListener('change', this.onImportUpload);
 
-            return embed(
-                this.toggledShowcase
-                    ? this.level.showcase
-                    : this.level.verification
-            );
-        },
-    },
-    async mounted() {
-        // Hide loading spinner
-        this.list = await fetchList();
-        this.editors = await fetchEditors();
-        this.averageRatings = calculateAverageRatings(this.list);
+        // Load progress from local storage
+        const roulette = JSON.parse(localStorage.getItem('roulette'));
 
-        // Error handling
-        if (!this.list) {
-            this.errors = [
-                "Failed to load list. Retry in a few minutes or notify list staff.",
-            ];
-        } else {
-            this.errors.push(
-                ...this.list
-                    .filter(([_, err]) => err)
-                    .map(([_, err]) => {
-                        return `Failed to load level. (${err}.json)`;
-                    })
-            );
-            if (!this.editors) {
-                this.errors.push("Failed to load list editors.");
-            }
+        if (!roulette) {
+            return;
         }
 
-        this.loading = false;
+        this.levels = roulette.levels;
+        this.progression = roulette.progression;
+    },
+    computed: {
+        currentLevel() {
+            return this.levels[this.progression.length];
+        },
+        currentPercentage() {
+            return this.progression[this.progression.length - 1] || 0;
+        },
+        placeholder() {
+            return `At least ${this.currentPercentage + 1}%`;
+        },
+        hasCompleted() {
+            return (
+                this.progression[this.progression.length - 1] >= 100 ||
+                this.progression.length === this.levels.length
+            );
+        },
+        isActive() {
+            return (
+                this.progression.length > 0 &&
+                !this.givenUp &&
+                !this.hasCompleted
+            );
+        },
     },
     methods: {
-        embed,
-        score,
-        calculateAverageRatings,
+        shuffle,
+        getThumbnailFromId,
+        getYoutubeIdFromUrl,
+        async onStart() {
+            if (this.isActive) {
+                this.showToast('Give up before starting a new roulette.');
+                return;
+            }
+
+            if (!this.useMainList && !this.useExtendedList) {
+                return;
+            }
+
+            this.loading = true;
+
+            const fullList = await fetchList();
+
+            if (fullList.filter(([_, err]) => err).length > 0) {
+                this.loading = false;
+                this.showToast(
+                    'List is currently broken. Wait until it\'s fixed to start a roulette.',
+                );
+                return;
+            }
+
+            const fullListMapped = fullList.map(([lvl, _], i) => ({
+                rank: i + 1,
+                id: lvl.id,
+                name: lvl.name,
+                video: lvl.verification,
+            }));
+            const list = [];
+            if (this.useMainList) list.push(...fullListMapped.slice(0, 75));
+            if (this.useExtendedList) {
+                list.push(...fullListMapped.slice(75, 150));
+            }
+
+            // random 100 levels
+            this.levels = shuffle(list).slice(0, 100);
+            this.showRemaining = false;
+            this.givenUp = false;
+            this.progression = [];
+            this.percentage = undefined;
+
+            this.loading = false;
+        },
+        save() {
+            localStorage.setItem(
+                'roulette',
+                JSON.stringify({
+                    levels: this.levels,
+                    progression: this.progression,
+                }),
+            );
+        },
+        onDone() {
+            if (!this.percentage) {
+                return;
+            }
+
+            if (
+                this.percentage <= this.currentPercentage ||
+                this.percentage > 100
+            ) {
+                this.showToast('Invalid percentage.');
+                return;
+            }
+
+            this.progression.push(this.percentage);
+            this.percentage = undefined;
+
+            this.save();
+        },
+        onGiveUp() {
+            this.givenUp = true;
+
+            // Save progress
+            localStorage.removeItem('roulette');
+        },
+        onImport() {
+            if (
+                this.isActive &&
+                !window.confirm('This will overwrite the currently running roulette. Continue?')
+            ) {
+                return;
+            }
+
+            this.fileInput.showPicker();
+        },
+        async onImportUpload() {
+            if (this.fileInput.files.length === 0) return;
+
+            const file = this.fileInput.files[0];
+
+            if (file.type !== 'application/json') {
+                this.showToast('Invalid file.');
+                return;
+            }
+
+            try {
+                const roulette = JSON.parse(await file.text());
+
+                if (!roulette.levels || !roulette.progression) {
+                    this.showToast('Invalid file.');
+                    return;
+                }
+
+                this.levels = roulette.levels;
+                this.progression = roulette.progression;
+                this.save();
+                this.givenUp = false;
+                this.showRemaining = false;
+                this.percentage = undefined;
+            } catch {
+                this.showToast('Invalid file.');
+                return;
+            }
+        },
+        onExport() {
+            const file = new Blob(
+                [JSON.stringify({
+                    levels: this.levels,
+                    progression: this.progression,
+                })],
+                { type: 'application/json' },
+            );
+            const a = document.createElement('a');
+            a.href = URL.createObjectURL(file);
+            a.download = 'tsl_roulette';
+            a.click();
+            URL.revokeObjectURL(a.href);
+        },
+        showToast(msg) {
+            this.toasts.push(msg);
+            setTimeout(() => {
+                this.toasts.shift();
+            }, 3000);
+        },
     },
 };
