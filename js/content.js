@@ -41,6 +41,14 @@ export async function fetchList() {
                         throw new Error(`Failed to fetch ${path}.json: ${levelResult.status} ${levelResult.statusText}. Response: ${errorText}`);
                     }
                     const level = await levelResult.json();
+
+                    // Fetch banned users
+                    const bannedUsers = await fetchBannedUsers();
+                    // Remove records from banned users
+                    level.records = level.records.filter(
+                        (record) => !bannedUsers.includes(record.user)
+                    );
+
                     return [
                         {
                             ...level,
