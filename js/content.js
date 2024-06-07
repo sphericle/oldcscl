@@ -64,6 +64,11 @@ export async function fetchLeaderboard() {
             return;
         }
 
+        // Remove records from banned users
+        level.records = level.records.filter(
+            (record) => !bannedUsers.includes(record.user)
+        );
+
         // Check if verifier is banned
         let verifier = Object.keys(scoreMap).find(
             (u) => u.toLowerCase() === level.verifier.toLowerCase(),
@@ -95,7 +100,7 @@ export async function fetchLeaderboard() {
             const user = Object.keys(scoreMap).find(
                 (u) => u.toLowerCase() === record.user.toLowerCase(),
             ) || record.user;
-            
+
             if (bannedUsers.includes(user)) return;
 
             scoreMap[user] ??= {
