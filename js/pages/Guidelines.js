@@ -102,7 +102,7 @@ export default {
         onLinkClick(element) {
             console.log('clicked');
             console.log(element);
-            document.getElementById(element)[3].scrollIntoView();
+            this.$refs.element?.scrollIntoView({ behavior: 'smooth' });
           }
         
         
