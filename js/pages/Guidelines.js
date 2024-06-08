@@ -104,7 +104,7 @@ export default {
                     <p>
                         When levels are submitted, they are given to "Reliable" members to play and vote on whether the level is list worthy in its decoration, gameplay, and sync. A member is given reliable by being active and showing that they are trustworthy. Every month or so, the list team promotes and demotes people from the reliable system. Reliables also vote on the difficulty of a level, and give their opinion as to where on the list it should go.
                     </p>
-                    <h3>Rules reliables must follow:</h3>
+                    <h3 style="margin-top:1em;">Rules reliables must follow:</h3>
                     <p>
                         They can only vote on levels after playing them, unless it obviously does not meet <a @click="selected = 2"><u>decoration standards.</u></a>
                     </p>
