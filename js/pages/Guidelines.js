@@ -87,6 +87,10 @@ export default {
                         More things will be added here in the future, so stay tuned!
                     </p>
                 </div>
+                <div class="levels">
+                    <h2 id="tidalwave">title wave</h2>
+                        <p>The level starts with a fast-paced cube section, switching between various game-modes. At 9%, the level decelerates into a cube segment, then a brief straight-fly before returning to another fast-paced cube section with tricky timings. A difficult ship section with fake orbs follows at 18%, transitioning to a brief UFO segment. Just before the drop, simple cube clicks appear, followed by the level's title. The first drop features a tough big-wave section with tight gaps and anti-gravity portals. At 30%, the player starts alternating sizes, increasing difficulty with periodic darkening and brightening effects. At 39%, a half-speed break offers simpler cube, wave, and robot sequences in the midst of darker visuals. At 42%, the level brightens with a beach cutscene, leading to a challenging cube-UFO-spider segment and a quadruple-speed dual. Before the second drop, there is a double-speed wave segment followed by a slower cube part with occasional mini-wave clicks intertwined. The second drop is at quadruple-speed, beginning with a wave section that goes on until 62%, where game modes start rapidly alternating. Subsequently, at 72%, another wave segment appears, arguably the hardest of the level. The following finale, with an orange sunset palette, includes fast cube clicks, a challenging ship section, and a final wave segment with tight spaces. The level ends at 95%, displaying "THANKS FOR PLAYING" alternating with "WATCHING", followed by verification info and credits.</p>
+                        </div>
             </section>
         </main>
     `,
