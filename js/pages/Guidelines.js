@@ -19,8 +19,9 @@ export default {
                 <p style="cursor:pointer"><a @click="selected = 2"><b>Challenge Standards</b></a></p>
                 <p style="cursor:pointer"><a @click="selected = 3"><b>title wave</b></a></p>
             </div>
+            <hr>
             <section class="levels-container">
-                <div class="levels" v-if="selected === 0">
+                <div style="text-align: center;" class="levels" v-if="selected === 0">
                     <h2>Home</h2>
                     <p>
                         wip
