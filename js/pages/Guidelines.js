@@ -17,7 +17,7 @@ export default {
                 <p style="cursor:pointer"><a @click="selected = 0"><b>Home</b></a></p>
                 <p style="cursor:pointer"><a @click="selected = 1"><b>Submission Requirements</b></a></p>
                 <p style="cursor:pointer"><a @click="selected = 2"><b>Challenge Standards</b></a></p>
-                <p style="cursor:pointer"><a @click="selected = 3"><b>title wave</b></a></p>
+                <p style="cursor:pointer"><a @click="selected = 4"><b>Reliable System</b></a></p>
             </div>
             <section class="levels-container">
                 <div style="text-align: center;" class="levels" v-if="selected === 0">
@@ -99,6 +99,22 @@ export default {
                     <h2>auto submission syntax placeholder</h2>
                     <p>auto submission syntax placeholder</p>
                          </div>
+                <div class="levels" v-else-if="selected === 4">
+                    <h2>Reliable System</h2>
+                    <p>
+                        When levels are submitted, they are given to "Reliable" members to play and vote on whether the level is list worthy in its decoration, gameplay, and sync. A member is given reliable by being active and showing that they are trustworthy. Every month or so, the list team promotes and demotes people from the reliable system. Reliables also vote on the difficulty of a level, and give their opinion as to where on the list it should go.
+                    </p>
+                    <h3>Rules reliables must follow:</h3>
+                    <p>
+                        They can only vote on levels after playing them, unless it obviously does not meet <a @click="selected = 2"><u>decoration standards.</u></a>
+                    </p>
+                    <p>
+                        They are not allowed to vote on a level's list worthiness if they are a creator or verifier of (or otherwise would have a bias towards) the level.
+                    </p>
+                    <p>
+                        Levels are accepted when there are 4 yeses than nos, and vice versa. For example, a level with 5 yeses and 1 no would be accepted and ready to place, while one with 4 yeses and 2 nos would still need to be voted on.
+                    </p>
+                </div>
             </section>
         </main>
     `,
