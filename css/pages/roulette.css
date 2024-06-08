@@ -34,6 +34,7 @@
     grid-row: 1;
     grid-column: 2 / span 2;
     overflow-y: auto;
+    margin-right:25px;
 }
 
 .page-roulette .levels {
