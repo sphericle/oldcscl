@@ -14,13 +14,8 @@ export default {
                         If you have any questions, please join the <a href="https://discord.gg/87QtEZv5kp" target="_blank">Discord Server</a>.
                     </p>
                 </div>
-<<<<<<< HEAD
-                <p><a @click.native.prevent="(submissionReqs) => onLinkClick"><u>Submission Requirements</u></a></p>
-                <p><a @click.native.prevent="(challengeReqs) => onLinkClick"><u>Challenge Standards</u></a></p>
-=======
-                <a @click.prevent="(submissionReqs) => onLinkClick"><u>Submission Requirements</u></a>
-                <p @click="onLinkClick"><u>Challenge Standards</u></p>
->>>>>>> 8de71df181a356dd359094f9d54b3e5e73646d60
+                <p><a @click.prevent="(submissionReqs) => onLinkClick"><u>Submission Requirements</u></a></p>
+                <p><a @click="onLinkClick"><u>Challenge Standards</u></a></p>
             </div>
             <section class="levels-container">
                 <div class="levels" ref="submissionReqs">
