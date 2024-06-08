@@ -21,6 +21,12 @@ export default {
             </div>
             <section class="levels-container">
                 <div class="levels" v-if="selected === 1">
+                    <h2>Home</h2>
+                    <p>
+                        wip
+                    </p>
+                </div>
+                <div class="levels" v-if="selected === 1">
                     <h2>Submission Requirements</h2>
                     <p>
                         Achieved the record without using hacks (however, Click Between Frames is allowed.) A list of allowed hacks in Mega Hack can be found <a href="https://docs.google.com/spreadsheets/d/1evE4nXATxRAQWu2Ajs54E6cVUqHBoSid8I7JauJnOzg/edit#gid=0"><u>here.</u></a>
