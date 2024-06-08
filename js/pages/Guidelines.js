@@ -14,12 +14,12 @@ export default {
                         If you have any questions, please join the <a href="https://discord.gg/87QtEZv5kp" target="_blank">Discord Server</a>.
                     </p>
                 </div>
-                <p><u><a href="#submission">Submission Requirements</a></u></p>
-                <p><u><a href="#standards">Challenge Standards</a></u></p>
+                <p @click.native.prevent="(submissionReqs) => onLinkClick"><u>Submission Requirements</u></p>
+                <p @click="onLinkClick"><u>Challenge Standards</u></p>
             </div>
             <section class="levels-container">
                 <div class="levels" id="submissionReqs">
-                    <h2 id="submission">Submission Requirements</h2>
+                    <h2 >Submission Requirements</h2>
                     <p>
                         Achieved the record without using hacks (however, Click Between Frames is allowed.) A list of allowed hacks in Mega Hack can be found <a href="https://docs.google.com/spreadsheets/d/1evE4nXATxRAQWu2Ajs54E6cVUqHBoSid8I7JauJnOzg/edit#gid=0"><u>here.</u></a>
                     </p>
@@ -93,5 +93,13 @@ export default {
     data: () => ({
         loading: false,
     }),
+
+    methods: {
+        onLinkClick(element) {
+            document.getElementById(element)[3].scrollIntoView();
+          }
+        
+        
+    },
     
 };
