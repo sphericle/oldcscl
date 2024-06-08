@@ -20,7 +20,7 @@ export default {
                 <p><a @click="selected = 3"><b>Challenge Standards</b></a></p>
             </div>
             <section class="levels-container">
-                <div class="levels" v-if="selected === 1">
+                <div class="levels" v-if="selected === 0">
                     <h2>Home</h2>
                     <p>
                         wip
