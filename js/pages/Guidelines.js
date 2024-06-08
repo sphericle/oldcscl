@@ -106,7 +106,7 @@ export default {
                     </p>
                     <h3 style="margin-top:1em;">Rules reliables must follow:</h3>
                     <p>
-                        They can only vote on levels after playing them, unless it obviously does not meet <a @click="selected = 2"><u>decoration standards.</u></a>
+                        They can only vote on levels after playing them, unless it obviously does not meet <a style="cursor:pointer" @click="selected = 2"><u>decoration standards.</u></a>
                     </p>
                     <p>
                         They are not allowed to vote on a level's list worthiness if they are a creator or verifier of (or otherwise would have a bias towards) the level.
