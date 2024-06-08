@@ -14,7 +14,7 @@ export default {
                         If you have any questions, please join the <a href="https://discord.gg/87QtEZv5kp" target="_blank">Discord Server</a>.
                     </p>
                 </div>
-                <p><a @click.prevent="(submissionReqs) => onLinkClick"><u>Submission Requirements</u></a></p>
+                <p><a @click="onLinkClick"><u>Submission Requirements</u></a></p>
                 <p><a @click="onLinkClick"><u>Challenge Standards</u></a></p>
             </div>
             <section class="levels-container">
@@ -99,10 +99,10 @@ export default {
     }),
 
     methods: {
-        onLinkClick(element) {
+        onLinkClick(isThisAnAlreadyExistingElementLetsFindOut) {
             console.log('clicked');
-            console.log(element);
-            this.$refs.element?.scrollIntoView({ behavior: 'smooth' });
+            console.log(isThisAnAlreadyExistingElementLetsFindOut);
+            this.$refs.isThisAnAlreadyExistingElementLetsFindOut?.scrollIntoView({ behavior: 'smooth' });
           }
         
         
