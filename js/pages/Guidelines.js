@@ -66,7 +66,7 @@ export default {
                 </div>
                 <div class="levels" v-else-if="selected === 2">
                     <h2>Challenge Standards</h2>
-                    <p style="color: #aaa;margin-top: 0px;font-size:11px;">More things will be added here in the future, so stay tuned!</p>
+                    <p style="color: #aaa;margin-top: 0px;font-size:13px;">More things will be added here in the future, so stay tuned!</p>
                     <p>
                         <b>Most clicks in the level should be well-synced to the level’s song or a part of the song, however there can be a small amount of clicks that do not sync.</b>
                     </p>
