@@ -18,8 +18,8 @@ export default {
                 <p @click="onLinkClick"><u>Challenge Standards</u></p>
             </div>
             <section class="levels-container">
-                <div class="levels" id="submissionReqs">
-                    <h2 >Submission Requirements</h2>
+                <div class="levels" ref="submissionReqs">
+                    <h2>Submission Requirements</h2>
                     <p>
                         Achieved the record without using hacks (however, Click Between Frames is allowed.) A list of allowed hacks in Mega Hack can be found <a href="https://docs.google.com/spreadsheets/d/1evE4nXATxRAQWu2Ajs54E6cVUqHBoSid8I7JauJnOzg/edit#gid=0"><u>here.</u></a>
                     </p>
@@ -54,8 +54,8 @@ export default {
                         Recording must capture entire game window.
                     </p>
                 </div>
-                <div class="levels" id="challengeReqs">
-                    <h2 id="standards">Challenge Standards</h2>
+                <div class="levels" ref="challengeReqs">
+                    <h2>Challenge Standards</h2>
                     <p>
                         <b>Most clicks in the level should be well-synced to the level’s song or a part of the song, however there can be a small amount of clicks that do not sync.</b>
                     </p>
