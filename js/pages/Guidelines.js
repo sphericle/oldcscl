@@ -14,9 +14,9 @@ export default {
                         If you have any questions, please join the <a href="https://discord.gg/87QtEZv5kp" target="_blank">Discord Server</a>.
                     </p>
                 </div>
-                <p><u><a href="#home"></a>Home</u></p>
-                <p><u><a href="#submission"></a>Submission Requirements</u></p>
-                <p><u><a href="#standards"></a>Submission Requirements</u></p>
+                <p><u><a href="#home">Home</a></u></p>
+                <p><u><a href="#submission">Submission Requirements</a></u></p>
+                <p><u><a href="#standards">Challenge Standards</a></u></p>
             </div>
             <section class="levels-container">
                 <div class="levels" id="submissionReqs">
