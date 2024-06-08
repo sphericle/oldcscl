@@ -14,7 +14,7 @@ export default {
                         If you have any questions, please join the <a href="https://discord.gg/87QtEZv5kp" target="_blank">Discord Server</a>.
                     </p>
                 </div>
-                <a @click.native.prevent="(submissionReqs) => onLinkClick"><u>Submission Requirements</u></a>
+                <a @click.prevent="(submissionReqs) => onLinkClick"><u>Submission Requirements</u></a>
                 <p @click="onLinkClick"><u>Challenge Standards</u></p>
             </div>
             <section class="levels-container">
@@ -100,6 +100,8 @@ export default {
 
     methods: {
         onLinkClick(element) {
+            console.log('clicked');
+            console.log(element);
             document.getElementById(element)[3].scrollIntoView();
           }
         
