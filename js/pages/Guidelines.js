@@ -22,9 +22,9 @@ export default {
             <section class="levels-container">
                 <div style="text-align: center;" class="levels" v-if="selected === 0">
                     <h1>Clicksync Challenge List Guidelines</h1>
-                    <p>
+                    <h2>
                         Hi!
-                    </p>
+                    </h2>
                     <p>
                         This page details everything you need to know about the list, from <a style="cursor:pointer;" @click="selected = 2"><u>submitting your own challenges</u></a> to <a style="cursor:pointer;" @click="selected = 1"><u>recording and submitting records.</u></a> Please read through these before trying to submit a challenge or record because, chances are, it will get denied due to some easily avoidable reason detailed here. 
                     </p>
