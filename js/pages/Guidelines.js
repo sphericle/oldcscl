@@ -14,10 +14,12 @@ export default {
                         If you have any questions, please join the <a href="https://discord.gg/87QtEZv5kp" target="_blank">Discord Server</a>.
                     </p>
                 </div>
+                <p><u><a href="#home"></a>Home</u></p>
                 <p><u><a href="#submission"></a>Submission Requirements</u></p>
+                <p><u><a href="#standards"></a>Submission Requirements</u></p>
             </div>
             <section class="levels-container">
-                <div class="levels">
+                <div class="levels" id="submissionReqs">
                     <h2 id="submission">Submission Requirements</h2>
                     <p>
                         Achieved the record without using hacks (however, Click Between Frames is allowed.) A list of allowed hacks in Mega Hack can be found <a href="https://docs.google.com/spreadsheets/d/1evE4nXATxRAQWu2Ajs54E6cVUqHBoSid8I7JauJnOzg/edit#gid=0"><u>here.</u></a>
@@ -51,6 +53,39 @@ export default {
                     </p>
                     <p>
                         Recording must capture entire game window.
+                    </p>
+                </div>
+                <div class="levels" id="challengeReqs">
+                    <h2 id="standards">Challenge Standards</h2>
+                    <p>
+                        <b>Most clicks in the level should be well-synced to the level’s song or a part of the song, however there can be a small amount of clicks that do not sync.</b>
+                    </p>
+                    <p>
+                        Levels must be 30 seconds or less.
+                    </p>
+                    <p>
+                        Levels must have decent gameplay and decoration/structuring. Basic or lazy structuring can be okay if the overall decoration is good.
+                    </p>
+                    <p>
+                        Level must not include stolen gameplay.
+                    </p>
+                    <p>
+                        Level must not have crash triggers.
+                    </p>
+                    <p>
+                        Level must not break in Practice Mode/StartPos.
+                    </p>
+                    <p>
+                        No Spam Based or Straight-Fly challenges. (Ex. Final Flight, Garbanzo, etc.)
+                    </p>
+                    <p>
+                        Levels cannot be found from other lists and added here.
+                    </p>
+                    <p>
+                        Levels cannot start with the word "Walmart".
+                    </p>
+                    <p style="margin-top: 20px;">
+                        More things will be added here in the future, so stay tuned!
                     </p>
                 </div>
             </section>
