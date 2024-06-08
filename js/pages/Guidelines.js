@@ -7,7 +7,7 @@ export default {
             <Spinner></Spinner>
         </main>
         <main v-else class="page-roulette">
-            <div class="sidebar" style="margin: 15px;text-align: center;">
+            <div class="sidebar" style="margin: 15px;">
                 <div id="discord" style="text-align: left;">
                     <p class="type-label-md" style="color: #aaa">
                         If you have any questions, please join the <a href="https://discord.gg/87QtEZv5kp" target="_blank">Discord Server</a>.
