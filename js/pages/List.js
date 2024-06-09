@@ -119,6 +119,7 @@ export default {
                             </li>
                         </ol>
                     </template>
+
                     
                     <p>Join the <u><a href="https://discord.gg/W7Eqqj8NG2">Discord</a></u> to submit a record or challenge!</p>
                 </div>
