@@ -35,7 +35,12 @@
     grid-row: 1;
     grid-column: 2 / span 2;
     overflow-y: auto;
-    margin-right:25px;
+    margin-right:2rem;
+}
+.page-guidelines .levels-container {
+    grid-row: 1;
+    grid-column: 2 / span 2;
+    overflow-y: auto;
 }
 
 .page-roulette .levels {

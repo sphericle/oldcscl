@@ -6,7 +6,7 @@ export default {
         <main v-if="loading">
             <Spinner></Spinner>
         </main>
-        <main v-else class="page-roulette">
+        <main v-else class="page-guidelines">
             <div class="sidebar" style="margin: 15px;">
                 <div id="discord" style="text-align: left;">
                     <p class="type-label-md" style="color: #aaa">
