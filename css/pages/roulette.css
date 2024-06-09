@@ -34,14 +34,9 @@
 .page-roulette .levels-container {
     grid-row: 1;
     grid-column: 2 / span 2;
-    overflow-y: auto;
-    margin-right:2rem;
+    overflow-y: auto; 
 }
-.page-guidelines .levels-container {
-    grid-row: 1;
-    grid-column: 2 / span 2;
-    overflow-y: auto;
-}
+
 
 .page-roulette .levels {
     display: flex;

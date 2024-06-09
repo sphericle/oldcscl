@@ -11,7 +11,7 @@ export default {
             <Spinner></Spinner>
         </main>
         <main v-else class="page-roulette">
-            <div class="sidebar">
+            <div class="sidebar" style="padding-left:32px">
                 <p class="type-label-md" style="color: #aaa">
                     Shameless copy of the Extreme Demon Roulette by <a href="https://matcool.github.io/extreme-demon-roulette/" target="_blank">matcool</a>.
                 </p>
@@ -37,7 +37,7 @@ export default {
                     </div>
                 </form>
             </div>
-            <section style="padding-right: 2rem;" class="levels-container">
+            <section class="levels-container">
                 <div class="levels">
                     <template v-if="levels.length > 0">
                         <!-- Completed Levels -->
