@@ -68,7 +68,7 @@ export default {
                     <h2>Challenge Standards</h2>
                   <p style="color: #aaa;margin-top: -20px;font-size:15px;">More things will be added here in the future, so stay tuned!</p>
                     <p>
-                        <b>Most clicks in the level should be well-synced to the level’s song or a part of the song, however there can be a small amount of clicks that do not sync.</b>
+                        <b>Most clicks in the level should be obviously well-synced to the level’s song or a part of the song, however there can be a small amount of clicks that do not sync.</b>
                     </p>
                     <p><b>
                         Levels must have decent gameplay and decoration/structuring. Basic or lazy structuring can be okay if the overall decoration is good, and vice versa. Read the <a style="cursor:pointer;" @click="selected = 4"><u>Reliable System</u></a> docs for more info on how we decide if a level is list worthy.
