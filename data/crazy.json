@@ -98,6 +98,13 @@
             "percent": 100,
             "rating": 10,
             "hz": 1920
+        },
+        {
+            "user": "Cocobuggz",
+            "link": "https://youtu.be/B2JNJRvl2Cg",
+            "percent": 100,
+            "rating": 7,
+            "hz": 360
         }
     ]
 }
