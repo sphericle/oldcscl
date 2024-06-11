@@ -31,7 +31,7 @@ export default {
                 <div class="levels" v-if="selected === 1">
                     <h2>Record Guidelines</h2>
                     <p>
-                        Achieved the record without using hacks (however, Click Between Frames is allowed.) A list of allowed hacks in Mega Hack can be found <a href="https://docs.google.com/spreadsheets/d/1evE4nXATxRAQWu2Ajs54E6cVUqHBoSid8I7JauJnOzg/edit#gid=0" target="_blank"><u>here.</u></a>
+                        Achieved the record without using hacks (however, Click Between Frames is allowed.) A list of allowed hacks in Mega Hack can be found <a href="https://docs.google.com/spreadsheets/d/1cDye-bCkyKu9TH4g4pxKSYr1bk8BFJzzWW1YcfB5uvE/view" target="_blank"><u>here.</u></a>
                     </p>
                     <p>
                         FPS Bypass is allowed, but Physics Bypass is banned.
