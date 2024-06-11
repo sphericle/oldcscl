@@ -36,13 +36,6 @@
             "rating": 7.5,
             "hz": 240
         },
-       {
-            "user": "K3NNYY0",
-            "link": "https://youtu.be/zJyfJvBZGWc",
-            "percent": 100,
-            "rating": 2,
-            "hz": 240
-        },
         {
             "user": "xaern",
             "link": "https://youtu.be/IMm25qp_yWg",
@@ -63,6 +56,13 @@
             "percent": 100,
             "rating": 9,
             "hz": 330
+        },
+        {
+            "user": "Cocobuggz",
+            "link": "https://youtu.be/5fF3734Ihjw",
+            "percent": 100,
+            "rating": 8,
+            "hz": 360
         }
     ]
 }
