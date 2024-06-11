@@ -105,6 +105,13 @@
             "percent": 100,
             "rating": 7,
             "hz": 360
+        },
+        {
+            "user": "burstt",
+            "link": "https://youtu.be/a4DWpq0rcdQ?si=ITCzv7AuwlrMsyeI",
+            "percent": 100,
+            "rating": 9,
+            "hz": 240
         }
     ]
 }
