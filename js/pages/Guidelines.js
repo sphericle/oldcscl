@@ -19,7 +19,7 @@ export default {
                 <p style="cursor:pointer"><a @click="selected = 2"><b>Challenge Standards</b></a></p>
                 <p style="cursor:pointer"><a @click="selected = 4"><b>Reliable System</b></a></p>
             </div>
-            <section class="levels-container">
+            <section style="margin:8px;" class="levels-container">
                 <div style="text-align: center;" class="levels" v-if="selected === 0">
                     <h1>Clicksync Challenge List Guidelines</h1>
                     <h2>
