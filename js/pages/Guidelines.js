@@ -13,7 +13,7 @@ export default {
                         If you have any questions, please join the <a href="https://discord.gg/87QtEZv5kp" target="_blank">Discord Server</a>.
                     </p>
                 </div>
-              <div style="font-size:33px">
+              <div id="menu-items" style="font-size:33px">
                 <p style="cursor:pointer"><a @click="selected = 0"><b>Home</b></a></p>
                 <p style="cursor:pointer"><a @click="selected = 1"><b>Record Guidelines</b></a></p>
                 <p style="cursor:pointer"><a @click="selected = 2"><b>Challenge Standards</b></a></p>

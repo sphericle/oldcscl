@@ -6,6 +6,15 @@
     gap: 2rem;
     align-items: flex-start;
 }
+
+#menu-items {
+    cursor: pointer;
+}
+
+#menu-items > p {
+    margin: 15px;
+}
+
 .page-roulette .sidebar a {
     text-decoration: underline;
 }
