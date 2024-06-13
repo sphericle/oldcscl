@@ -27,7 +27,7 @@ export default {
                         Hi!
                     </h2>
                     <p>
-                        This page details everything you need to know about the list, from <a style="cursor:pointer;" @click="selected = 2"><u>submitting your own challenges</u></a> to <a style="cursor:pointer;" @click="selected = 1"><u>recording and submitting records.</u></a> Please read through these before trying to submit a challenge or record because, chances are, it will get denied due to some easily avoidable reason detailed here. 
+                        This page details everything you need to know about the list, from <a @click="selected = 2"><u>submitting your own challenges</u></a> to <a @click="selected = 1"><u>recording and submitting records.</u></a> Please read through these before trying to submit a challenge or record because, chances are, it will get denied due to some easily avoidable reason detailed here. 
                     </p>
                 </div>
                 <div class="levels" v-if="selected === 1">
@@ -73,7 +73,7 @@ export default {
                         <b>Most clicks in the level should be obviously well-synced to the level’s song or a part of the song, however there can be a small amount of clicks that do not sync.</b>
                     </p>
                     <p><b>
-                        Levels must have decent gameplay and decoration/structuring. Basic or lazy structuring can be okay if the overall decoration is good, and vice versa. Read the <a style="cursor:pointer;" @click="selected = 4"><u>Reliable System</u></a> docs for more info on how we decide if a level is list worthy.
+                        Levels must have decent gameplay and decoration/structuring. Basic or lazy structuring can be okay if the overall decoration is good, and vice versa. Read the <a @click="selected = 4"><u>Reliable System</u></a> docs for more info on how we decide if a level is list worthy.
                     </b></p>
                     <p>
                         Levels must be 30 seconds or less.
@@ -106,11 +106,11 @@ export default {
                 <div class="levels" v-else-if="selected === 4">
                     <h2>Reliable System</h2>
                     <p>
-                        The Reliable system (almost entirely copied from <a href="https://laylist.pages.dev" target="_blank"><u>The Layout List</u></a>) is how we decide whether a challenge meets all <a style="cursor:pointer;" @click="selected = 2"><u>standards</u></a> for the list. When levels are submitted, they are given to "Reliable" members to play and vote on whether the level is list worthy in its decoration, gameplay, and sync. A member is given reliable by being active and showing that they are trustworthy. Every month or so, the list team promotes and demotes people from the reliable system. Reliables also vote on the difficulty of a level, and give their opinion as to where on the list it should go. This entire process happens through our <a href="https://discord.gg/87QtEZv5kp" target="_blank">Discord Server</a>.
+                        The Reliable system (almost entirely copied from <a href="https://laylist.pages.dev" target="_blank"><u>The Layout List</u></a>) is how we decide whether a challenge meets all <a @click="selected = 2"><u>standards</u></a> for the list. When levels are submitted, they are given to "Reliable" members to play and vote on whether the level is list worthy in its decoration, gameplay, and sync. A member is given reliable by being active and showing that they are trustworthy. Every month or so, the list team promotes and demotes people from the reliable system. Reliables also vote on the difficulty of a level, and give their opinion as to where on the list it should go. This entire process happens through our <a href="https://discord.gg/87QtEZv5kp" target="_blank">Discord Server</a>.
                     </p>
                     <h3 style="margin-top:1em;">Rules reliables must follow:</h3>
                     <p>
-                        They can only vote on levels after playing them, unless it obviously does not meet <a style="cursor: pointer;" @click="selected = 2"><u>decoration standards.</u></a>
+                        They can only vote on levels after playing them, unless it obviously does not meet <a @click="selected = 2"><u>decoration standards.</u></a>
                     </p>
                     <p>
                         They are not allowed to vote on a level's list worthiness if they are a creator or verifier of (or otherwise would have a bias towards) the level.
