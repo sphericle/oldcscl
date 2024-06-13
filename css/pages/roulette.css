@@ -15,6 +15,10 @@
     margin: 40px;
 }
 
+#all-docs > a {
+    cursor:pointer;
+}
+
 .page-roulette .sidebar a {
     text-decoration: underline;
 }
