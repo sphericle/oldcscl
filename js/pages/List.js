@@ -106,9 +106,7 @@ export default {
                     <div class="og">
                         <p class="type-label-md">Website layout made by <a href="https://tsl.pages.dev/" target="_blank">TheShittyList</a>. Some code from <a href="https://laylist.pages.dev/" target="_blank">The Layout List</a>.</p>
                     </div>
-                    <div class="og">
-                    <p class="type-label-md">Find an issue with the website (NOT the list itself)? <a href="https://github.com/sphericle/ClicksyncChallengeList/issues" target="_blank">Report it on the website!</a>.</p>
-                </div>
+                    
                     <template v-if="editors">
                         <h3>List Editors</h3>
                         <ol class="editors">
