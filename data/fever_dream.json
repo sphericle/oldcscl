@@ -10,6 +10,13 @@
     "percentToQualify": 100,
     "song-title": "Syn Cole - Feel Good",
     "records": [
-        
+        {
+            "user": "Cocobuggz",
+            "link": "https://youtu.be/wz6lLn5t2zo",
+            "percent": 100,
+            "rating": 10,
+            "hz": 360,
+            "reviewed": true
+        } 
     ]
 }
