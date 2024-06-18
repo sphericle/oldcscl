@@ -25,6 +25,14 @@
             "rating": 10,
             "hz": 240,
             "reviewed": true
+        },
+        {
+            "user": "invest",
+            "link": "https://youtu.be/fls-mil9sn4",
+            "percent": 100,
+            "rating": 9,
+            "hz": 360,
+            "reviewed": true
         }
     ]
 }
