@@ -15,6 +15,7 @@ async function fetchBannedUsers() {
         const responseText = await result.text();
         const bannedData = JSON.parse(responseText);
         const bannedUsers = (bannedData.bannedRecords || []).concat(bannedData.bannedCreators || []);
+        console.log('Parsed banned users:', bannedUsers); // Log parsed banned users
         return bannedUsers;
     } catch (error) {
         console.error('Error fetching banned users:', error);
@@ -103,6 +104,7 @@ export async function fetchLeaderboard() {
             (record) => !bannedUsers.includes(record.user)
         );
 
+        console.log(`Level: ${level.name}, Records after filtering:`, level.records); // Logging filtered records
 
         // Check if verifier is banned
         let verifier = Object.keys(scoreMap).find(
