@@ -1,10 +1,12 @@
 {
     "bannedRecords": [
-        "K3NNYY0",
-        "zengd1",
-        "zengt1"
+        "TheBlueElephant"
     ],
+    
     "bannedCreators": [
         
-    ]
+    ],
+    
+    "READ THIS!!!!!": "ok so the code that goes through this list and removes records from banned players makes the website reallyllyly slow, so just use this as a temporary way to quickly remove records, someone will eventually go through and actually delete the records lol"
+
 }
