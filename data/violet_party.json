@@ -10,5 +10,12 @@
     "percentToQualify": 100,
     "song-title": "lexycat - jasmine",
     "records": [
+        {
+            "user": "FogMello",
+            "link": "https://youtu.be/DY8EOivjkPQ",
+            "percent": 100,
+            "rating": 10,
+            "hz": 240
+         }
     ]
 }
