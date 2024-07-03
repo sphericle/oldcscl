@@ -64,6 +64,13 @@
             "percent": 100,
             "rating": 9,
             "hz": 240
+        },
+        {
+            "user": "netfedex97",
+            "link": "https://www.youtube.com/watch?v=rr_7N5LC3OY",
+            "percent": 100,
+            "rating": 10,
+            "hz": 144
         }
     ]
 }
