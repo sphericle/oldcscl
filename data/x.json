@@ -10,6 +10,12 @@
     "song-title": "Kendrick Lamar, U2 - XXX.",
     "song-link": "https://drive.google.com/file/d/1CmXW4FIfK-eLK0Hxbxw_DDk1glN_mHLu/view?usp=drive_link",
     "records": [
-        
+        {
+            "user": "FogMello",
+            "link": "https://www.youtube.com/watch?v=Yc-KVMT9S_0",
+            "percent": 100,
+            "rating": 8,
+            "hz": 240
+        }
     ]
 }
