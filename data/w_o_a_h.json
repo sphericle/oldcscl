@@ -1,0 +1,28 @@
+{
+    "id": 107093874,
+    "name": "w o a h",
+    "author": "aciemru",
+    "creators": [
+        "aciemru"
+    ],
+    "verifier": "aciemru",
+    "verification": "https://www.youtube.com/watch?v=k7ATz0aAYu0",
+    "percentToQualify": 100,
+    "song-title": "Femtanyl - P3T",
+    "records": [
+        {
+            "user": "netfedex97",
+            "link": "https://youtu.be/hR0z7hj6VrE",
+            "percent": 100,
+            "rating": 5,
+            "hz": 144
+        },
+          {
+            "user": "TheBlueElephant",
+            "link": "https://youtu.be/Xj8lukKqiRc",
+            "percent": 100,
+            "rating": 9,
+            "hz": 240
+        }
+    ]
+}
