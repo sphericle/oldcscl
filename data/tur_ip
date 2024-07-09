@@ -1,0 +1,29 @@
+{
+    "id": 107366451,
+    "name": "tur ip",
+    "author": "aciemru",
+    "creators": [
+        "aciemru"
+    ],
+    "verifier": "aciemru",
+    "verification": "https://youtu.be/XVT7ltBYn7M",
+    "percentToQualify": 100,
+    "song-title": "Electro-Light - Symbolism",
+    "records": [
+        {
+            "user": "TheBlueElephant",
+            "link": "https://youtu.be/uFPLD1YzgUU",
+            "percent": 100,
+            "rating": 6,
+            "hz": 240
+        },
+          {
+            "user": "Ultrobro",
+            "link": "https://youtu.be/VfNSZIAtq1A?si=Z_9JHwbpqQaHqZ1o",
+            "percent": 100,
+            "rating": 4,
+            "mobile": "true",
+            "hz": 60
+        }
+    ]
+}
