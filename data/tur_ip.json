@@ -24,6 +24,13 @@
             "rating": 4,
             "mobile": "true",
             "hz": 60
+        },
+        {
+            "user": "zonkers",
+            "link": "https://www.youtube.com/watch?v=oCTln9halas",
+            "percent": 100,
+            "rating": 0.1,
+            "hz": 240
         }
     ]
 }
