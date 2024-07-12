@@ -3,6 +3,12 @@ import Spinner from '../components/Spinner.js';
 export default {
     components: { Spinner },
     template: `
+
+        <style>
+            a {
+                color:blue
+            }
+        </style>
         <main v-if="loading">
             <Spinner></Spinner>
         </main>
