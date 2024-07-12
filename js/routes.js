@@ -5,9 +5,9 @@ import Guidelines from './pages/Guidelines.js';
 import NewSite from './pages/NewSite.js';
 
 export default [
-    { path: '/', component: List },
+    { path: '/', component: NewSite },
     { path: '/leaderboard', component: Leaderboard },
     { path: '/roulette', component: Roulette },
     { path: '/guidelines', component: Guidelines },
-    { path: '/new', component: NewSite },
+    { path: '/list', component: List },
 ];
